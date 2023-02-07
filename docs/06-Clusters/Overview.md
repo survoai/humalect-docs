@@ -153,4 +153,4 @@ If your domain is not verified, you'll see the following error message.
 
 
 ### Troubleshooting
-Need help? [Contact](./../Contact-us/reach-out-to-us) us
+Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us

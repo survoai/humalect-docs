@@ -5,7 +5,7 @@ sidebar_position: 3
 # Project Deletion
 
 ## What is Project?
-To know more about projects, visit [Project](./../../projects/overview).
+To know more about projects, visit [Project](./../../docs/projects/overview).
 
 ## Consequences of Deleting a Project
 

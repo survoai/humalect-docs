@@ -57,4 +57,4 @@ Bitbucket is a web-based version control and collaboration tool for software dev
 ---
 
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us
+Need help? [Contact](./../Contact-us/reach-out-to-us) us

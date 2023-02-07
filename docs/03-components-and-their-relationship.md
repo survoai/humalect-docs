@@ -9,7 +9,7 @@ slug: /components-and-their-relationship
 ## Cluster
 Cluster refers to the kubernetes clusters that are created via the Humalect platform. These are managed K8s EKS/AKS clusters provided by cloud providers. Cluster is the starting point and everything that exists in the Humalect world gets created inside clusters.
 
-To know more about cluster, visit [Cluster](./../cluster-overview).
+To know more about cluster, visit [Cluster](./../docs/cluster-overview).
 
 ![image.png](./../static/img/components-relationship.png)
 
@@ -18,7 +18,7 @@ An `environment` is a self contained namespace in the kubernetes cluster that ho
 
 Every cluster can have multiple environments. Each environment is logically separated from the other.
 
-To know more about environment, visit [Environment](./../Environments/Overview).
+To know more about environment, visit [Environment](./../docs/Environments/Overview).
 
 ### Projects
 
@@ -26,14 +26,14 @@ A project is a logical entity in which the user maps two options:
 1. The cluster on which the application is to be deployed
 2. The code respository that is to be deployed
 
-To know more about projects, visit [Project](./../projects/overview).
+To know more about projects, visit [Project](./../docs/projects/overview).
 
 <b>Note:-</b> Project is not a physical/infra entity, it is just a logical entity to map the cluster and code repo for application deployments.
 
 ### Pipelines
 Pipeline is a logical entity, one level below the project. After selecting the cluster and the code repository on the project level, pipelines allow to select the environment and the git branch for the application deployment. In a pipeline, user can also enter the subdomain on which the application deployment is to be hosted. All the manifests like Dockerfiles, YAMLs and environment variables can be edited in a pipeline.
 
-To know more about pipelines, visit [Pipelines](./../Pipelines/overview).
+To know more about pipelines, visit [Pipelines](./../docs/Pipelines/overview).
 
 ### Deployments
 Once the pipeline is created, it can be deployed via direct commits on code repositories (if CD is enabled) or manual deployments from the pipelines page UI. A deployment is an instance of a pipeline execution (which takes the code from source code repository, builds it and releases it for the user to consume).
@@ -51,4 +51,4 @@ Let us consider an example of a Food Delivery App(FDA) to understand the concept
 
 
 ### Troubleshooting
-Need help? [Contact](./../Contact-us/reach-out-to-us) us
+Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us
