@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Humalect Documentation',
+  title: 'Humalect Docs',
   tagline: 'DevOps made simple',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -50,7 +50,7 @@ const config = {
       navbar: {
         title: 'Documentation',
         logo: {
-          alt: 'Humalect Documentation',
+          alt: 'Humalect Docs',
           src: 'img/humalect.png',
         },
         items: [
