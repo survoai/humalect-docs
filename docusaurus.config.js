@@ -9,7 +9,7 @@ const config = {
   title: 'Humalect Docs',
   tagline: 'DevOps made simple',
   url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
