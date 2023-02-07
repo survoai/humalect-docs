@@ -24,7 +24,7 @@ Once a project is deleted, all the pipelines associated with the project also ge
 
 ## Creating a new project
 Click on the `Create New Project` button on the top right corner to create a new project.
-To know more about creating a new project, visit [Create Project](https://docs.humalect.com/en/project).
+To know more about creating a new project, visit [Create Project](./create-a-project).
 
 
 ### Troubleshooting

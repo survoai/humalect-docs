@@ -18,7 +18,7 @@ The environment which is customer facing. This is what will power your user faci
 3. Click on `Create New Environment` button on top right.
 ![env](./../../static/img/env.png)
 
-To know more about the steps to create an environment, visit [Environment](https://docs.humalect.com/en/EnvironmentPage)
+To know more about the steps to create an environment, visit [Environment](./create-an-environment)
 
 ## Relationship between kubernetes namespaces and humalect's environment
 Humalect enviornments use kubernetes namespaces under the hood. All your resources like deployments and datasources are created within a particular namespace that is linked to a specific environment. This allows for complete isolation without replicating additional infrastrcuture costs.

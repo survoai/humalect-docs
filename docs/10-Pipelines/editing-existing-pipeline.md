@@ -2,10 +2,6 @@
 sidebar_position: 3
 ---
 
-# Updating an existing Pipeline
-
-To know more about pipelines, visit [Pipelines](https://docs.humalect.com/en/pipelineOverview).
-
 ## Prerequisites to Update a Pipeline
 1. There should be a `running cluster`.
 2. A project should be running as a pipeline is a part of it.

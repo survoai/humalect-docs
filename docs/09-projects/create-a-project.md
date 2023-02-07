@@ -14,7 +14,7 @@ There should be a running cluster to host the project.
 
 2. Name the project. The name could be anything but it must be unique.
 3. Give a brief description about the project. The description might include:- What the project is about?, What is the scope of the project, etc.
-4. Select a `cluster` on which you want to host your project. To know more about clusters, refer to [Cluster](https://docs.humalect.com/en/Cluster/Cluster).
+4. Select a `cluster` on which you want to host your project.
 
 5. Select a `Repository` from the linked code repositories..
 ![select-repo](./../../static/img/select-repo.png)

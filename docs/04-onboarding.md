@@ -32,8 +32,8 @@ You need to connect your cloud provider with Humalect so that we can seemlessly 
 
 We need to integrate with your Source Code Provider to automatically build your commits and provide you with options to run various environments from your source code repositories and their branches. Currently, we support Gitlab, Github and Bitbucket. In order to connect with bitbucket, you can visit  [Integrating Bitbucket with Humalect](./../docs/Integrations/Bitbucket).
 <!-- TODO
-2. [Integrating Gitlab with Humalect](https://docs.humalect.com/en/integrations/bitbucket).
-3. [Integrating Github with Humalect](https://docs.humalect.com/en/integrations/bitbucket). -->
+2. [Integrating Gitlab with Humalect](to-be-added).
+3. [Integrating Github with Humalect](to-be-added). -->
 In order to connect Github and Gitlab, you can visit [this link](https://console.humalect.com/user/integrations) and follow their respective workflows.
 
 ---

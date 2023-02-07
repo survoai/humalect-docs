@@ -38,7 +38,7 @@ To know more about pipelines, visit [Pipelines](./../docs/Pipelines/overview).
 ### Deployments
 Once the pipeline is created, it can be deployed via direct commits on code repositories (if CD is enabled) or manual deployments from the pipelines page UI. A deployment is an instance of a pipeline execution (which takes the code from source code repository, builds it and releases it for the user to consume).
 <!---
-To know more about deployments, visit [Deployments](https://docs.humalect.com/en/deploymentPage).
+To know more about deployments, visit [Deployments](link-to-be-added).
 --->
 ## Example
 Let us consider an example of a Food Delivery App(FDA) to understand the concepts better.

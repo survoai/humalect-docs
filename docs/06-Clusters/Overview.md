@@ -71,8 +71,8 @@ Enter all the required details and hit create cluster. After you successfully cr
 
 
 > **Next Steps:**
-> **1. [Create AWS Cluster](https://docs.humalect.com/en/Cluster/cluster-aws)**
-> **2. [Create Azure Cluster](https://docs.humalect.com/en/Cluster/cluster-azure)**
+> **1. [Create AWS Cluster](to-be-added)**
+> **2. [Create Azure Cluster](to-be-added)**
 
 
 ## Created Clusters
@@ -117,7 +117,7 @@ To delete a cluster,
 
 **Step 3:** If the option to delete the cluster is not available to you, there can be 2 reasons for it.
 - You are **not** the admin. Only users with admin access can delete clusters.
-- Enable cluster deletion from user settings. Refer [here.](https://docs.humalect.com/en/Admin)
+- Cluster deletion is not enabled in user settings, please enable it. 
 
 **Step 4:** Once you click on the `Delete` option, cluster deletion will start, you can click on `logs` from the UI to see the same as shown in the figure below.
 
