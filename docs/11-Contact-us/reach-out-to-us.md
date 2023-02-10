@@ -18,6 +18,3 @@ Humalect Technologies Private Limited
 HSR Layout, Sector 1, Bangalore, KA, India
 
 Support contact: +91-8068575881
-
-### Troubleshooting
-Need help? [Contact](./../Contact-us/reach-out-to-us) us
