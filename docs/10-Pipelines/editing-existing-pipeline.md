@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 ---
-
+# How to edit an existing pipeline?
 ## Prerequisites to Update a Pipeline
 1. There should be a `running cluster`.
 2. A project should be running as a pipeline is a part of it.
