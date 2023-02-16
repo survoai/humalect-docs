@@ -48,14 +48,21 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Documentation',
+        title: '',
         logo: {
           alt: 'Humalect Docs',
           src: 'img/humalect.png',
+          href: 'https://humalect.com/',
+          srcDark: 'img/humalect-dark.png',
+
         },
         items: [
 
-
+          {
+                   href: '/',
+                   label: 'Docs Home',
+                   position: 'right',
+                 },
         ],
       },
       prism: {
