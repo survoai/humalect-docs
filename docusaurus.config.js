@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Humalect Docs',
   tagline: 'DevOps made simple',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://humalect.com',
   baseUrl: '/docs/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
