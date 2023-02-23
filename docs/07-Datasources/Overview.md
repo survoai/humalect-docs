@@ -2,7 +2,7 @@
 sidebar_position: 1
 title: Datasources overview
 ---
-> ## This article covers:-
+> This article covers:-
 > 1. What do data sources mean in the Humalect world?
 > 2. List of Databases/Caches and their supported versions.
 > 3. Steps to create a Datasource via the Humalect platform
