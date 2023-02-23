@@ -1,5 +1,6 @@
 ---
 slug: /cluster-overview
+title: Clusters Overview
 
 ---
 > ## This article covers:-

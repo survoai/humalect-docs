@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Datasources overview
 ---
 > ## This article covers:-
 > 1. What do data sources mean in the Humalect world?

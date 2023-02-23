@@ -1,3 +1,7 @@
+---
+title: Create an AWS EKS cluster
+---
+
 ## Steps to create an AWS EKS Cluster
 Go to `clusters` tab from the left side navigation bar on Humalect platform and click on `Create new cluster`.
 ![aws-cluster-creation](./../../static/img/aws-cluster-creation.png)
