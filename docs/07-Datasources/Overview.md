@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Datasources overview
+description: Databases and caches supported by Humalect platform
 ---
 > This article covers:-
 > 1. What do data sources mean in the Humalect world?
