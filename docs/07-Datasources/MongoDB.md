@@ -1,4 +1,8 @@
-> ## This article covers:-
+---
+description: MongoDB installation on Humalect platform
+---
+
+> This article covers:-
 > 1. Create a MongoDB Datasource
 > 2. How to use existing datasources in a pipeline?
 
