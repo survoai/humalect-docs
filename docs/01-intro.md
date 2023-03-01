@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-slug: /
+slug: /why-we-built-humalect
 ---
 
 # What is Humalect and why we built it?
