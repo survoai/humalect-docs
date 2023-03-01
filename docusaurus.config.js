@@ -35,6 +35,7 @@ const config = {
         docs: {
         routeBasePath: '/', // Serve the docs at the site's root
         /* other docs plugin options */
+        breadcrumbs: false,
       },
         blog: false,
         theme: {
