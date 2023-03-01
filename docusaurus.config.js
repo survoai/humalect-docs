@@ -37,10 +37,6 @@ const config = {
         /* other docs plugin options */
         breadcrumbs: false,
       },
-        blog: {
-        routeBasePath: '/tutorials', // Serve the docs at the site's root
-        /* other docs plugin options */
-      },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
