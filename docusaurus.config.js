@@ -37,6 +37,11 @@ const config = {
         /* other docs plugin options */
         breadcrumbs: false,
       },
+      blog: {
+      routeBasePath: '/tutorials', // Serve the docs at the site's root
+      /* other docs plugin options */
+      blogTitle: 'Tutorials',
+         blogDescription: 'Deploy any tech stack in less than a minute',    },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -59,7 +64,7 @@ const config = {
         items: [
 
           {
-                   href: '/why-we-built-humalect',
+                   href: '/',
                    label: 'Docs',
                    position: 'right',
                  },
@@ -69,6 +74,24 @@ const config = {
                           label: 'Tutorials',
                           position: 'right',
                         },
+
+                        {
+                                 href: 'https://humalect.com/blog/',
+                                 label: 'Blog',
+                                 position: 'right',
+                               },
+
+                               {
+                                        href: 'https://console.humalect.com/public/user/login',
+                                        label: 'Sign in',
+                                        position: 'right',
+                                      },
+
+                                      {
+                                               href: 'https://console.humalect.com/public/org/signup-request',
+                                               label: 'Sign up',
+                                               position: 'right',
+                                             },
         ],
       },
       prism: {
