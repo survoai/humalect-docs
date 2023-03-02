@@ -82,6 +82,12 @@ const config = {
                                },
 
                                {
+                                        href: 'https://the-deployers-network.slack.com/join/shared_invite/zt-1prmynkvr-aalDl9nOjpKuoROXRLH8wQ#/shared-invite/email',
+                                        label: 'Join Community',
+                                        position: 'right',
+                                      },
+
+                               {
                                         href: 'https://console.humalect.com/public/user/login',
                                         label: 'Sign in',
                                         position: 'right',
