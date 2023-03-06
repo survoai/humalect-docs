@@ -56,9 +56,9 @@ To learn more about how to create environments, please visit [environments](./..
 Humalect datasources allow you to deploy your choice of databases/caches in your kubernetes cluster in a few clicks. The data is safely stored in persistence volumes with your cloud provider. We currently support Redis, MongoDB and Postgres.
 Visit the links below for instructions on how to create your databases.
 
-1. [Creating Redis with Humalect](./../docs/DataSources/Redis)
+1. [Creating Redis with Humalect](./../docs/Datasources/Redis)
 2. [Creating MongoDB with Humalect](./../docs/Datasources/MongoDB)
-3. [Creating PostgreSQL with Humalect](./../docs/DataSources/Postgres)
+3. [Creating PostgreSQL with Humalect](./../docs/Datasources/Postgres)
 ---
 ## Create Projects
 We need a logical mapping between source code repositories and cluster on which they will be deployed. We call it Projects in the Humalect universe.
