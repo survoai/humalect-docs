@@ -2,11 +2,6 @@
 description: Postgres installation on Humalect platform
 ---
 
-> This article covers:-
-> 1. Create a Postgres Datasource
-> 2. How to use existing datasources in a pipeline?
-
-
 Humalect provides several databases that you can integrate and bring your data to the platform with minimal permissions from Humalect's side, in this article, we will be focusing on **Postgres**.
 
 Postgres is a free and open-source *relational database* management system that is used for managing large amounts of structured data. It offers robust support for SQL, as well as several advanced features, including multi-version concurrency control, point-in-time recovery, and native replication.
@@ -14,10 +9,10 @@ Postgres is a free and open-source *relational database* management system that 
 
 > For more information, see [Postgres Docs.](https://www.postgresql.org/docs/)
 
-> ## Prerequisite
-> *1. have a connected Cloud provider*
-> *2. have a connected Source Code provider*
-> *3. have a cluster*
+> ## Prerequisites
+1. Have a connected cloud provider
+2. Have a connected source code provider
+3. Have a cluster
 
 ## Create a Postgres Datasource
 

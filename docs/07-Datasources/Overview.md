@@ -3,12 +3,6 @@ sidebar_position: 1
 title: Datasources overview
 description: Databases and caches supported by Humalect platform
 ---
-> This article covers:-
-> 1. What do data sources mean in the Humalect world?
-> 2. List of Databases/Caches and their supported versions.
-> 3. Steps to create a Datasource via the Humalect platform
-> 4. Can these be used in production?
-> 6. Are these datasources fault tolerant?
 
 ## What do we mean by data sources?
 

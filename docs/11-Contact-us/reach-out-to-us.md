@@ -1,4 +1,6 @@
-
+---
+title: Reach out to us
+---
 **Humalect** is a reliable self-service DevOps automation platform. Deploy apps and environments in your cloud account in minutes.
 
 Reach out to us for any queries you may have.

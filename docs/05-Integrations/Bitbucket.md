@@ -2,18 +2,11 @@
 sidebar_position: 2
 ---
 
-> ## This article covers
-> 1. What is Bitbucket
-> 2. Bitbucket Use Cases
-> 3. Connecting your Bitbucket Account
-
-
 **Humalect** provides Bitbucket as one of the source code provider integrations.
 
 ## What is Bitbucket?
 
 **Bitbucket** is a web-based version control and collaboration tool for software development. It allows teams to host and manage their code, collaborate on development, and build and deploy their applications with integrated CI/CD. Let's look at some of its use cases.
-
 
 ## Bitbucket Use Cases
 
