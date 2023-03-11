@@ -3,7 +3,7 @@ sidebar_position: 1
 slug: /
 ---
 
-# What is Humalect and why we built it?
+# What is Humalect?
 
 We are a team of passionate DevOps and full stack engineers who faced multiple issues while working because of the way developer teams function.
 

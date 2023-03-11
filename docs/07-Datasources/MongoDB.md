@@ -2,10 +2,6 @@
 description: MongoDB installation on Humalect platform
 ---
 
-> This article covers:-
-> 1. Create a MongoDB Datasource
-> 2. How to use existing datasources in a pipeline?
-
 Humalect provides several databases that you can integrate and bring your data to the platform, in this article, we will be focusing on **MongoDB**.
 
 MongoDB is a *NoSQL*, document-based database management system. It uses JSON-like documents to store and retrieve data, offering high scalability, flexibility and performance. It also supports indexing, transactions, and rich querying capabilities.
@@ -13,10 +9,10 @@ MongoDB is a *NoSQL*, document-based database management system. It uses JSON-li
 
 > For more information, see [MongoDB Docs.](https://www.mongodb.com/docs/)
 
-> ## Prerequisite
-> *1. have a connected Cloud provider*
-> *2. have a connected Source Code provider*
-> *3. have a cluster*
+> ## Prerequisites
+1. Have a connected cloud provider
+2. Have a connected source code provider
+3. Have a cluster
 
 
 ## Create a MongoDB Datasource

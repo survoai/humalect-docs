@@ -6,18 +6,6 @@ sidebar_position: 4
 
 Following are the steps to host your infrastructure and deploy your applications using the Humalect platform.
 
-1. [Signup with humalect](#signup-with-humalect)
-2. [Integrate your Cloud Provider](#integrate-your-cloud-provider)
-3. [Integrate your Source Code Provider](#integrate-your-source-code-provider)
-4. [Create a Kubernetes Cluster](#create-a-kubernetes-cluster)
-5. [Create the Desired Environments](#create-the-desired-environments)
-6. [Create Data Sources (optional)](#create-data-sources)
-7. [Create Projects](#create-projects)
-8. [Create Pipelines](#create-pipelines)
-9. [Start Shipping code](#start-shipping-code)
-
-
----
 ## Signup with humalect
 
 visit https://humalect.com and sign up. Complete the registration flow and log in

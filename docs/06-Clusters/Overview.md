@@ -3,15 +3,6 @@ slug: /cluster-overview
 title: Clusters Overview
 description: Easily create kubernetes clusters in a few clicks
 ---
-> ## This article covers:-
-> *1. Introduction to Clusters*
-> *2. Cluster Viewing options*
-> *3. Create New Cluster*
-> *4. Created Clusters*
-> *5. Steps to Delete a Created Cluster*
-> *6. Node Pools (disabled feature)*
-> *7. Domains*
-
 
 ## Introduction to Clusters
 

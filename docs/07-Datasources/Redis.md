@@ -2,11 +2,6 @@
 description: Redis installation on Humalect platform
 ---
 
-> This article covers:-
-> 1. Create a Redis Datasource
-> 2. How to use existing datasources in a pipeline?
-
-
 Humalect provides several databases that you can integrate and bring your data to the platform with minimal permissions from Humalect's side, in this article, we will be focusing on **Redis**.
 
 Redis is an *in-memory data* structure store. It can be used as a database, cache, and message broker. It supports multiple data structures such as *strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes* with radius queries.
@@ -14,9 +9,9 @@ Redis is an *in-memory data* structure store. It can be used as a database, cach
 > For more information, see [Redis Docs.](https://redis.io/docs/about/)
 
 > ## Prerequisites
-> *1. have a connected Cloud provider*
-> *2. have a connected Source Code provider*
-> *3. have a cluster*
+1. Have a connected cloud provider
+2. Have a connected source code provider
+3. Have a cluster
 
 
 ## Create a Redis Datasource
