@@ -116,6 +116,7 @@ Happy deploying!
 
 So far we have seen how to deploy your bot using Humalect, now lets dive into some technical details about the bot itself.
 
+
 Here's the simple Dockerfile we wrote to run the bot in a Docker conatiner.
 
 ```Dockerfile title="Dockerfile"
@@ -134,7 +135,7 @@ CMD [ "python", "./main.py"]
 
 Below is the driver file for the bot. 
 
-```python title = "main.py" 
+```python title="main.py" 
 import bot
 
 if __name__ == '__main__':
@@ -143,7 +144,7 @@ if __name__ == '__main__':
 
 Below is the response of the bot when user enters a prompt.
 
-```python title = "responses.py" 
+```python title="responses.py" 
 def handle_response(message) -> str:
     p_message = message.lower()
 
@@ -155,7 +156,7 @@ def handle_response(message) -> str:
 
 Below is the main logic for the bot.
 
-```python title = "bot.py"
+```python title="bot.py"
 import discord
 import responses
 import os
@@ -223,5 +224,5 @@ As this tutorial is not on how to make a discord bot, refer to this [link](https
 
 That wraps up for this tutorial.
 
-Feel free to [Reaach out to us](https://humalect.com/docs/Contact-us/reach-out-to-us) in case you need help.
+Feel free to [Reach out to us](https://humalect.com/docs/Contact-us/reach-out-to-us) in case you need help.
 
