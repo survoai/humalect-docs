@@ -1,6 +1,6 @@
 ---
-slug: how-to-get-started-with-discord-bot
-title: How to get started with Discord Bot on Humalect platform
+slug: how-to-build-discord-bot-deploy-using-humalect
+title: How to build a discord bot and deploy it using Humalect?
 authors: [Priyansh]
 tags: [Bot]
 ---
@@ -110,3 +110,118 @@ Refer image below for live deployment logs and metrics.
 We are done!
 
 Happy deploying!
+
+
+## Working of the Discord Bot:
+
+So far we have seen how to deploy your bot using Humalect, now lets dive into some technical details about the bot itself.
+
+Here's the simple Dockerfile we wrote to run the bot in a Docker conatiner.
+
+```Dockerfile title="Dockerfile"
+#Deriving the latest base image
+FROM python:latest
+
+RUN pip3 install discord.py
+RUN pip3 install python-dotenv
+
+WORKDIR /app
+
+COPY *.py ./
+
+CMD [ "python", "./main.py"]
+```
+
+Below is the driver file for the bot. 
+
+```python title = "main.py" 
+import bot
+
+if __name__ == '__main__':
+    bot.run_discord_bot()
+```
+
+Below is the response of the bot when user enters a prompt.
+
+```python title = "responses.py" 
+def handle_response(message) -> str:
+    p_message = message.lower()
+
+    if p_message:
+        return p_message
+
+    return 'I do not know, trust me'
+```
+
+Below is the main logic for the bot.
+
+```python title = "bot.py"
+import discord
+import responses
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TOKEN = os.getenv("TOKEN")
+
+# Send messages
+async def send_message(message, user_message, is_private):
+    try:
+        response = responses.handle_response(user_message)
+        await message.author.send(response) if is_private else await message.channel.send(response)
+
+    except Exception as e:
+        print(e)
+
+
+def run_discord_bot():
+    
+    client = discord.Client(intents=discord.Intents.default())
+
+    @client.event
+    async def on_ready():
+        print(f'{client.user} is now running!')
+
+    @client.event
+    async def on_message(message):
+        # Make sure bot doesn't get stuck in an infinite loop
+        if message.author == client.user:
+            return
+
+        # Get data about the user
+        username = str(message.author)
+        user_message = str(message.content)
+        channel = str(message.channel)
+
+        # Debug printing
+        print(f"{username} said: '{user_message}' ({channel})")
+
+        # If the user message contains a '?' in front of the text, it becomes a private message
+        if user_message[0] == '?':
+            user_message = user_message[1:]  # [1:] Removes the '?'
+            await send_message(message, user_message, is_private=True)
+        else:
+            await send_message(message, user_message, is_private=False)
+
+    # Remember to run your bot with your personal TOKEN
+    client.run(TOKEN)
+
+```
+
+### How to get Token for your Discord bot
+1. Goto https://discord.com/developers/applications and create an application.
+2. Click on the application you created and go to https://discord.com/developers/applications/1088125550113067009/bot to generate the TOKEN. 
+3. Setup OAuth2 > URL Generator. Select Bot from Scopes and give the bot some permissions (or all).
+
+![discord-bot-app-URL](./discord-bot-app-URL.png)
+
+4. Below you'll find the generated URL to add the bot your servers. 
+
+As this tutorial is not on how to make a discord bot, refer to this [link](https://www.freecodecamp.org/news/create-a-discord-bot-with-python/) for full explanation of the same. 
+
+That wraps up for this tutorial.
+
+Feel free to [Reaach out to us](https://humalect.com/docs/Contact-us/reach-out-to-us) in case you need help.
+
