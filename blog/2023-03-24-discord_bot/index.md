@@ -2,7 +2,7 @@
 slug: how-to-build-discord-bot-deploy-using-humalect
 title: How to build a discord bot and deploy it using Humalect?
 authors: [Priyansh]
-tags: [Bot]
+tags: [Bot, Python]
 ---
 
 Discord bots are helpful artificial intelligence that can carry out a number of useful activities automatically on your server. That entails greeting any new participants, expelling disruptive individuals, and moderating the conversation. Several bots can even add games or audio to your server.

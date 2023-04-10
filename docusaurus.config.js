@@ -33,15 +33,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-        routeBasePath: '/', // Serve the docs at the site's root
-        /* other docs plugin options */
-        breadcrumbs: false,
-      },
-      blog: {
-      routeBasePath: '/tutorials', // Serve the docs at the site's root
-      /* other docs plugin options */
-      blogTitle: 'Tutorials',
-         blogDescription: 'Deploy any tech stack in less than a minute',    },
+          routeBasePath: '/', // Serve the docs at the site's root
+          /* other docs plugin options */
+          breadcrumbs: false,
+        },
+        blog: {
+          routeBasePath: '/tutorials', // Serve the docs at the site's root
+          /* other docs plugin options */
+          blogTitle: 'Tutorials',
+          blogDescription: 'Deploy any tech stack in less than a minute',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -64,40 +65,40 @@ const config = {
         items: [
 
           {
-                   href: '/',
-                   label: 'Docs',
-                   position: 'right',
-                 },
+            href: '/',
+            label: 'Docs',
+            position: 'right',
+          },
 
-                 {
-                          href: '/tutorials',
-                          label: 'Tutorials',
-                          position: 'right',
-                        },
+          {
+            href: '/tutorials',
+            label: 'Tutorials',
+            position: 'right',
+          },
 
-                        {
-                                 href: 'https://humalect.com/blog/',
-                                 label: 'Blog',
-                                 position: 'right',
-                               },
+          {
+            href: 'https://humalect.com/blog/',
+            label: 'Blog',
+            position: 'right',
+          },
 
-                               {
-                                        href: 'https://the-deployers-network.slack.com/join/shared_invite/zt-1prmynkvr-aalDl9nOjpKuoROXRLH8wQ#/shared-invite/email',
-                                        label: 'Join Community',
-                                        position: 'right',
-                                      },
+          {
+            href: 'https://the-deployers-network.slack.com/join/shared_invite/zt-1prmynkvr-aalDl9nOjpKuoROXRLH8wQ#/shared-invite/email',
+            label: 'Join Community',
+            position: 'right',
+          },
 
-                               {
-                                        href: 'https://console.humalect.com/public/user/login',
-                                        label: 'Sign in',
-                                        position: 'right',
-                                      },
+          {
+            href: 'https://console.humalect.com/public/user/login',
+            label: 'Sign in',
+            position: 'right',
+          },
 
-                                      {
-                                               href: 'https://console.humalect.com/public/org/signup-request',
-                                               label: 'Sign up',
-                                               position: 'right',
-                                             },
+          {
+            href: 'https://console.humalect.com/public/org/signup-request',
+            label: 'Sign up',
+            position: 'right',
+          },
         ],
       },
       prism: {
@@ -105,15 +106,15 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
-    plugins: [
-       [
-         '@docusaurus/plugin-google-gtag',
-         {
-           trackingID: 'G-0HZHWJPM8Y',
-           anonymizeIP: true,
-         },
-       ],
-     ],
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-0HZHWJPM8Y',
+        anonymizeIP: true,
+      },
+    ],
+  ],
 };
 
 module.exports = config;
