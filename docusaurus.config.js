@@ -41,6 +41,8 @@ const config = {
           routeBasePath: '/tutorials', // Serve the docs at the site's root
           /* other docs plugin options */
           blogTitle: 'Tutorials',
+          blogSidebarCount: 100,
+          blogSidebarTitle: 'Recent Posts',
           blogDescription: 'Deploy any tech stack in less than a minute',
         },
         theme: {
