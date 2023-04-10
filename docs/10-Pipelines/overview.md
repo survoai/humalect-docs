@@ -3,9 +3,9 @@ sidebar_position: 1
 ---
 
 # Pipelines Overview
-## What is Pipeline?
+## What is a Pipeline?
 
-Pipeline is a logical entity, one level below the project. After selecting the cluster and the code repository on the project level, pipelines allow to select the environment and the git branch for the application deployment. In a pipeline, user can also enter the subdomain on which the application deployment is to be hosted. All the manifests like Dockerfiles, YAMLs and environment variables can be edited in a pipeline.
+A pipeline is a logical entity, one level below the project. After selecting the cluster and the code repository on the project level, pipelines allow the selection of the environment and the git branch for the application deployment. In a pipeline, the user can also enter the subdomain on which the application deployment is to be hosted. All the manifests like Dockerfiles, YAMLs, and environment variables can be edited in a pipeline.
 
 ![pipelines-overview](./../../static/img/pipelines-overview.png)
 
@@ -16,7 +16,7 @@ Pipeline is a logical entity, one level below the project. After selecting the c
 Let us consider an example of an ABCD Banking App to understand the pipelines better.
 ![pipelines-illustration](./../../static/img/pipelines-illustration.png)
 
-1. `ABCD  Bank` has it's Banking App which needs to run a cluster via Humalect's console.
+1. `ABCD Bank` has its Banking App which needs to run a cluster via Humalect's console.
 
 2. The app's cluster will host multiple environments and projects.
 3. In this case, there are two running environments, i.e. test/testing and prod.
@@ -36,3 +36,4 @@ To know how to delete a pipeline in Humalect's console's dashboard, visit [Delet
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

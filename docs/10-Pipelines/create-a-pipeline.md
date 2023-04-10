@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ## Create Pipeline
 
-To create a pipeline for a project, Go to Humalect console's `dashboard` -> Click on `Projects` ->  Click on `Pipelines` button next to your choice of project -> Click on `Create New Pipeline` button on top right on the pipelines page.
+To create a pipeline for a project, Go to Humalect console's `dashboard` -> Click on `Projects` -> Click on the `Pipelines` button next to your choice of project -> Click on the `Create New Pipeline` button on the top right on the pipelines page.
 
 ![create-pipeline](./../../static/img/create-pipeline.png)
 
-At the top, you will see `Project`, `Cluster` and `Repository` being used in the current pipeline.
+At the top, you will see `Project`, `Cluster`, and `Repository` being used in the current pipeline.
 
 To create the pipeline, follow the steps below:-
 1. Assign a `sub-domain` to your pipeline. This sub-domain will be used to host all deployments for this pipeline.
@@ -23,14 +23,14 @@ To create the pipeline, follow the steps below:-
 4. Select the `branch` that you want to deploy in this pipeline
 5. Select the `environment` which you want to use for all the deployments of this pipeline
 6. Choose whether you want `CD enabled` or not. CD stands for Continuous Deployment, all your commits to this branch will be auto-deployed if this is checked.
-7. (optional) if you want to use a `datasource` created in previous steps in your pipeline, select it from the `Select Datasource` drop down.  
+7. (optional) If you want to use a `datasource` created in previous steps in your pipeline, select it from the `Select Datasource` dropdown. 
 ![connect-datasource](./../../static/img/connect-datasource.png)
 
-If you wish to connect any datasource to the pipeline, you can select it and add it's respective connection string in the environmnet variables in the next step.
-We currently support three datasources namely: Redis, MongoDB and PostgreSQL.
+If you wish to connect any datasource to the pipeline, you can select it and add its respective connection string in the environment variables in the next step.
+We currently support three datasources namely: Redis, MongoDB, and PostgreSQL.
 To know more about datasources, visit [Datasource](./../Datasources/Overview).
 
-8. Next, enter the `environment variables` for your pipeline. You can either add it one by one or use `Env Format` tab and paste your .env file directly. These environments variables will be securely stored in vault/secret-manager in your cloud account. Humalect doesn't access your secrets.
+8. Next, enter the `environment variables` for your pipeline. You can either add them one by one or use the `env Format` tab and paste your .env file directly. These environment variables will be securely stored in the vault/secret-manager in your cloud account. Humalect doesn't access your secrets.
 
 ![add-environment-variables](./../../static/img/add-environment-variables.png)
 
@@ -38,7 +38,7 @@ There is also a provision to fetch existing environment variables from previousl
 ![fetch-button](./../../static/img/fetch-button.png)
 ![fetch-env-variables](./../../static/img/fetch-env-variables.png)
 
-9. Now you can move on to the `advanced settings` which give you the access to edit `Dockerfile` and `YAML` files.
+9. Now you can move on to the `advanced settings` which give you access to edit `Dockerfile` and `YAML` files.
 
 <b>Dockerfile</b>
 
@@ -48,13 +48,13 @@ You can also use Dockerfile directly from your source code repository by clickin
 
 <b>YAML</b>
 
-The platform auto-generates `Deployment YAML`, `Service YAML` and `Ingress YAML`. You can customize them as per your need or use the recommended ones.
+The platform auto-generates `Deployment YAML`, `Service YAML`, and `Ingress YAML`. You can customize them as per your need or use the recommended ones.
 
 ![YAML](./../../static/img/YAML.png)
 
-You can also fetch YAML files from your source code repository or from any existing pipeline.
+You can also fetch YAML files from your source code repository or any existing pipeline.
 
-Please ensure that you use the below mentioned `variable names` if you are editing YAMLs or bringing your own.
+Please ensure that you use the below-mentioned `variable names` if you are editing YAMLs or bringing your own.
 ![variables-format](./../../static/img/variables-format.png)
 
 10. You can click on the checkbox `Deploy pipeline on creation` and it will automatically deploy your pipeline as soon as it is created.
@@ -63,3 +63,4 @@ After you have entered all the required necessities mentioned above, click on th
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

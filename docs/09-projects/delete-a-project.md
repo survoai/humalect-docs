@@ -11,10 +11,10 @@ To know more about projects, visit [Project](./../../docs/projects/overview).
 
 1. All the `pipelines` running in the project, will also be deleted.
 2. `Sub-domain` on which the project's pipeline is deployed won't function anymore.
-3. All the associated `ingress`, `deployments`, `secrets` and `services` of associated downstream pipelines will be deleted.
+3. All the associated `ingress`, `deployments`, `secrets`, and `services` of associated downstream pipelines will be deleted.
 
 ## Recommendation before Deleting the Project
-It is recommended to have a backup of your `YAML`, `Dockerfile` and `secrets` before deleting a project.
+It is recommended to have a backup of your `YAML`, `Dockerfile`, and `secrets` before deleting a project.
 
 ## Deleting the Project
 1. Go to Humalect's Console's `dashboard`.
@@ -23,7 +23,7 @@ It is recommended to have a backup of your `YAML`, `Dockerfile` and `secrets` be
 
 ![delete-project](./../../static/img/delete-project.png)
 
-4. You will see `delete` button, click on this button.
+4. You will see the `delete` button, click on this button.
 
 ![delete-button](./../../static/img/delete-button.png)
 
@@ -39,3 +39,4 @@ Your project will be deleted.
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

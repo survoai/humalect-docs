@@ -3,7 +3,7 @@ title: Create an AWS EKS cluster
 ---
 
 ## Steps to create an AWS EKS Cluster
-Go to `clusters` tab from the left side navigation bar on Humalect platform and click on `Create new cluster`.
+Go to the `clusters` tab from the left side navigation bar on the Humalect platform and click on `Create new cluster`.
 ![aws-cluster-creation](./../../static/img/aws-cluster-creation.png)
 
 
@@ -25,11 +25,11 @@ Go to `clusters` tab from the left side navigation bar on Humalect platform and 
 - Europe (Stockholm)
 
 **Step 5:** Next, select `VPC`. You can create a new VPC or select one from the drop list.
-	you'll see the following details here (This is to let you know the available resources from your AWS allocated Quota limit):
-	*a. Used IPs
-	b. Total IPs
-	c. Used VPCs
-	d.  Total VPCs*
+ you'll see the following details here (This is to let you know the available resources from your AWS allocated Quota limit):
+ *a. Used IPs
+ b. Total IPs
+ c. Used VPCs
+ d. Total VPCs*
 
 
 **Step 6:** Select `Monitoring Integrations` We provide integration with `Grafana` and `Datadog` as of now. You can also select `None`.
@@ -37,10 +37,10 @@ Go to `clusters` tab from the left side navigation bar on Humalect platform and 
 **Step 7:** Select the `Number of Nodes` and `Disk Size` by clicking on the (+) and/or (-) button or by manually entering a value.
 
 **Step 8:** Select a suitable instance type for nodes of your cluster. Here is a list of currently supported instance types:
-- T3a - offers balance of compute, memory, and network resources
-- T3 - offers balance of compute, memory, and network resources
+- T3a - offers a balance of compute, memory, and network resources
+- T3 - offers a balance of compute, memory, and network resources
 - T4g - Arm-based Graviton2 processors delivering better performance over T3
-- M5 - latest generation of General Purpose Instances powered by Intel Xeon® Platinum 8175M processors
+- M5 - the latest generation of General Purpose Instances powered by Intel Xeon® Platinum 8175M processors
 - C4 - Optimized for compute-intensive workloads
 - R5 - Designed to deliver fast performance for workloads that process large data sets in memory.
 
@@ -88,3 +88,4 @@ After you select any one of the machines from the above options, click on the `c
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

@@ -1,7 +1,7 @@
 ---
 slug: /cluster-overview
 title: Clusters Overview
-description: Easily create kubernetes clusters in a few clicks
+description: Easily create Kubernetes clusters in a few clicks
 ---
 
 ## Introduction to Clusters
@@ -12,7 +12,7 @@ A Kubernetes cluster typically includes at least one master node and one or more
 
 The cluster can be spread across multiple availability zones, regions, or even cloud providers to achieve high availability, scalability, and fault tolerance. Kubernetes also provides features such as auto-scaling, self-healing, and rolling updates, which allow it to automatically manage the resources available in the cluster and ensure that the applications running on it are highly available and performant.
 
-Humalect platform creates and uses managed kubernetes clusters like AWS EKS and Azure AKS provided by respective cloud providers.
+Humalect platform creates and uses managed Kubernetes clusters like AWS EKS and Azure AKS provided by respective cloud providers.
 
 ## Getting started
 
@@ -46,7 +46,7 @@ You can also select the next drop-down option to select:
 ## Create New Cluster
 
 To create a new cluster, click on the `+ Create New Cluster` button situated at the top right side.
-Humalect provide the following Cloud Integration options for now:
+Humalect provides the following Cloud Integration options for now:
 **1. Amazon Web Services (AWS)**
 **2. Microsoft Azure**
 
@@ -57,7 +57,7 @@ Feel free to request the cloud provider of your choice and we'll try to integrat
 
 
 
-Enter all the required details and hit create cluster. After you successfully create a cluster, you'll see a `Cluster creation in progress` bar, with a clickable button to see the Cluster creation `Logs`.
+Enter all the required details and hit `Create cluster` button. After you successfully create a cluster, you'll see a `Cluster creation in progress` bar, with a clickable button to see the Cluster creation `Logs`.
 
 ![cluster-creation](./../../static/img/cluster-creation.png)
 
@@ -80,18 +80,18 @@ Click on any of the clusters and you'll see a more detailed individual cluster v
 
 Refer to the table below for various fields and values associated with created clusters.
 
-> | Name                  | Desc |
+> | Name | Desc |
 > | --------------------- | ---- |
-> | **Name**                  | Name of the cluster    |
-> | **Region**                | cloud provider region in which cluster is created     |
-> | **cluster/cluster-delete**       | Kubernetes version of cluster.     |
-> | **Public Subnets**        | Network segment that allows external access to the cluster's resources and services via a public IP address.     |
-> | **Private Subnets**       | Network segment that is not publicly accessible and is used for internal communication between cluster nodes.|
-> | **DNS URL**               | DNS URL for Load Balancer or CDN on which the domain is to be pointed     |
-> | **Instance Size / Nodes** | Type of machine instance used to create the cluster     |
-> | **VPC Name**              | Virtual Private Cloud Name    |
-> | **Agent Version**         | Version of humalect agent that is being used by cluster     |
-> | **Status**                | Depicts whether the cluster is healthy or not.     |
+> | **Name** | Name of the cluster |
+> | **Region** | cloud provider region in which cluster is created |
+> | **cluster/cluster-delete** | Kubernetes version of cluster. |
+> | **Public Subnets** | Network segment that allows external access to the cluster's resources and services via a public IP address. |
+> | **Private Subnets** | Network segment that is not publicly accessible and is used for internal communication between cluster nodes.|
+> | **DNS URL** | DNS URL for Load Balancer or CDN on which the domain is to be pointed |
+> | **Instance Size / Nodes** | Type of machine instance used to create the cluster |
+> | **VPC Name** | Virtual Private Cloud Name |
+> | **Agent Version** | Version of humalect agent that is being used by cluster |
+> | **Status** | Depicts whether the cluster is healthy or not. |
 <center><i>Table showing Cluster details page values and their description. </i></center>
 
 
@@ -143,3 +143,4 @@ If your domain is not verified, you'll see the following error message.
 
 ### Troubleshooting
 Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us
+

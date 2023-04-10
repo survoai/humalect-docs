@@ -1,5 +1,5 @@
 ---
-description: Redis installation on Humalect platform
+description: Redis installation on the Humalect platform
 ---
 
 Humalect provides several databases that you can integrate and bring your data to the platform with minimal permissions from Humalect's side, in this article, we will be focusing on **Redis**.
@@ -32,14 +32,14 @@ Let's create a Datasource with `Redis v7.0.4`.
 
 **Step 3:** After you enter the above details, you'll be prompted to enter additional details such as `persistence size`, `service port`, etc. Refer to the below table for more information.
 
-###  Redis Advanced Options
+### Redis Advanced Options
 
-> | Value                     | Master | Replica | Description |
+> | Value | Master | Replica | Description |
 > | ------------------------- | ------ | ------- | ---- |
-> | **count**                     | 1*     | 3*      | number of replicas a master will remain connected with, number of instances of Master    |
-> | **persistence size**          | 8Gi*   | 8Gi*    |  This is a measure of size of a Redis database and can vary depending on the amount and type of data stored, as well as the configuration of the Redis instance.    |
-> | **existing persistence name** |        |         |  If you already have previous persistent volume claim and want to reuse it, you directly attach it using this setting   |
-> | **service port**              | 6379*  | 6379*   |   The default port for Redis is 6379, but it can be configured to listen on a different port using this setting.|
+> | **count** | 1* | 3* | number of replicas a master will remain connected with, number of instances of Master |
+> | **persistence size** | 8Gi* | 8Gi* | This is a measure of the size of a Redis database and can vary depending on the amount and type of data stored, as well as the configuration of the Redis instance. |
+> | **existing persistence name** | | | If you already have a previous persistent volume claim and want to reuse it, you directly attach it using this setting |
+> | **service port** | 6379* | 6379* | The default port for Redis is 6379, but it can be configured to listen on a different port using this setting.|
 
 
 `*default value`
@@ -55,14 +55,14 @@ Let's create a Datasource with `Redis v7.0.4`.
 
 
 **Step 5:** Once the Redis Datasource is successfully created, you'll see them listed in the DataSources tab with details like:
-		a. Datasource Name
-		b. Cluster Name
-		c. Database used
-		d. Database version used
+ a. Datasource Name
+ b. Cluster Name
+ c. Database used
+ d. Database version used
 
 **Step 6:** If you wish to **delete** the datasource, click on the vertical 3 dots next to the datasource card and click on `Delete`. This will initiate the deletion process.
 
-> **Caution:** Do not delete any datasource if you are not sure about it as it can lead to dataloss.
+> **Caution:** Do not delete any datasource if you are not sure about it as it can lead to data loss.
 
 
 
@@ -83,3 +83,4 @@ TBD
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

@@ -18,7 +18,7 @@ sidebar_position: 3
 
 ![list-pipelines](./../../static/img/list-pipelines.png)
 
-5. You will see `edit` button, click on this button.
+5. You will see the `edit` button, click on this button.
 
 ![edit-button](./../../static/img/edit-button.png)
 
@@ -31,3 +31,4 @@ Your pipeline will be updated.
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

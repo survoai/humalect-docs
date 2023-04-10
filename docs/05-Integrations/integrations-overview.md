@@ -8,12 +8,12 @@ Connect your favorite external tools to a single platform in a few clicks. This 
 
 # Cloud Providers
 ## Amazon Web Services (AWS)
-Amazon Web Services (AWS) is a cloud-based platform that provides a wide range of services, including compute, storage, and databases, as well as machine learning, analytics, and internet of things (IoT) functionality. It enables businesses to scale their infrastructure and applications on-demand, while reducing costs and increasing flexibility. AWS is one of the most popular and widely-used cloud providers, with a global network of data centers and a large ecosystem of partners and developers.
+Amazon Web Services (AWS) is a cloud-based platform that provides a wide range of services, including computing, storage, and databases, as well as machine learning, analytics, and Internet of Things (IoT) functionality. It enables businesses to scale their infrastructure and applications on demand while reducing costs and increasing flexibility. AWS is one of the most popular and widely-used cloud providers, with a global network of data centers and a large ecosystem of partners and developers.
 
-Here you can connect, setup and manage your infrastructure quickly.
+Here you can connect, set up and manage your infrastructure quickly.
 
 ## Microsoft Azure
-Microsoft Azure is a cloud computing platform and infrastructure created by Microsoft for building, deploying, and managing applications and services through a global network of Microsoft-managed data centers. It offers a wide range of services including compute, storage, databases, analytics, AI, Internet of things, and more. It is designed to help organizations to reduce costs, increase scalability and flexibility, and improve the availability and security of their IT infrastructure.
+Microsoft Azure is a cloud computing platform and infrastructure created by Microsoft for building, deploying, and managing applications and services through a global network of Microsoft-managed data centers. It offers a wide range of services including computing, storage, databases, analytics, AI, the Internet of Things, and more. It is designed to help organizations reduce costs, increase scalability and flexibility, and improve the availability and security of their IT infrastructure.
 
 
 # Monitoring Tools
@@ -27,7 +27,7 @@ Datadog is a cloud-based monitoring and analytics platform that allows businesse
 # Source Code Providers
 
 ## GitHub
-Github is a web-based platform that allows developers to store, share, and collaborate on software projects. It uses a version control system called Git to track changes and manage code updates. Github also provides a variety of tools and features for code review, issue tracking, and project management.
+GitHub is a web-based platform that allows developers to store, share, and collaborate on software projects. It uses a version control system called Git to track changes and manage code updates. GitHub also provides a variety of tools and features for code review, issue tracking, and project management.
 
 It is widely used by developers and organizations around the world for software development and collaboration.
 
@@ -44,3 +44,4 @@ Bitbucket is a web-based version control and collaboration tool for software dev
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+
