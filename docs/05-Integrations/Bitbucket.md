@@ -2,6 +2,11 @@
 sidebar_position: 2
 ---
 
+> ## This article covers
+> 1. What is Bitbucket
+> 2. Bitbucket Use Cases
+> 3. Connecting your Bitbucket Account
+
 **Humalect** provides Bitbucket as one of the source code provider integrations.
 
 ## What is Bitbucket?
@@ -46,5 +51,7 @@ You can also check the connected repositories from the Dashboard and `integratio
 ![integration-all-source-control](./../../static/img/integration-all-source-control.png)
 
 
+
+
 ### Troubleshooting
-Need help? [Contact](./../Contact-us/reach-out-to-us) us
+Need help? [Contact](https://docs.humalect.com/en/contact) us.
