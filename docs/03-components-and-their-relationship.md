@@ -7,14 +7,14 @@ slug: /components-and-their-relationship
 # Relationship between various commonly used terms
 
 ## Cluster
-Cluster refers to the kubernetes clusters that are created via the Humalect platform. These are managed K8s EKS/AKS clusters provided by cloud providers. Cluster is the starting point and everything that exists in the Humalect world gets created inside clusters.
+Cluster refers to the Kubernetes clusters that are created via the Humalect platform. These are managed K8s EKS/AKS clusters provided by cloud providers. Cluster is the starting point and everything that exists in the Humalect world gets created inside clusters.
 
 To know more about cluster, visit [Cluster](./../docs/cluster-overview).
 
 ![image.png](./../static/img/components-relationship.png)
 
 ### Environments
-An `environment` is a self contained namespace in the kubernetes cluster that hosts multiple application deployments and datasources.
+An `environment` is a self contained namespace in the Kubernetes cluster that hosts multiple application deployments and datasources.
 
 Every cluster can have multiple environments. Each environment is logically separated from the other.
 
@@ -24,7 +24,7 @@ To know more about environment, visit [Environment](./../docs/Environments/Overv
 
 A project is a logical entity in which the user maps two options:
 1. The cluster on which the application is to be deployed
-2. The code respository that is to be deployed
+2. The code repository that is to be deployed
 
 To know more about projects, visit [Project](./../docs/projects/overview).
 
@@ -47,8 +47,9 @@ Let us consider an example of a Food Delivery App(FDA) to understand the concept
 2. Let's say there are two running environments i.e. test/testing and production.
 3. There are two running projects present in the cluster i.e. api and fda. These are two different code repositories being deployed on the same cluster.
 4. Each of these has two pipelines each, one for each environment.
-5. Each pipeline has multiple deployments as and when new code is commited or whenever a pipeline is deployed manually.
+5. Each pipeline has multiple deployments as and when new code is committed or whenever a pipeline is deployed manually.
 
 
 ### Troubleshooting
 Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us
+

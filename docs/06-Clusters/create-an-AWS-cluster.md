@@ -3,7 +3,7 @@ title: Create an AWS EKS cluster
 ---
 
 ## Steps to create an AWS EKS Cluster
-Go to `clusters` tab from the left side navigation bar on Humalect platform and click on `Create new cluster`.
+Go to the `clusters` tab from the left side navigation bar on the Humalect platform and click on `Create new cluster`.
 ![aws-cluster-creation](./../../static/img/aws-cluster-creation.png)
 
 
@@ -25,11 +25,11 @@ Go to `clusters` tab from the left side navigation bar on Humalect platform and 
 - Europe (Stockholm)
 
 **Step 5:** Next, select `VPC`. You can create a new VPC or select one from the drop list.
-	you'll see the following details here (This is to let you know the available resources from your AWS allocated Quota limit):
-	*a. Used IPs
-	b. Total IPs
-	c. Used VPCs
-	d.  Total VPCs*
+ you'll see the following details here (This is to let you know the available resources from your AWS allocated Quota limit):
+ *a. Used IPs
+ b. Total IPs
+ c. Used VPCs
+ d. Total VPCs*
 
 
 **Step 6:** Select `Monitoring Integrations` We provide integration with `Grafana` and `Datadog` as of now. You can also select `None`.
@@ -88,3 +88,4 @@ After you select any one of the machines from the above options, click on the `c
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

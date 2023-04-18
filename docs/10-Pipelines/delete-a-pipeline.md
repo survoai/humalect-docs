@@ -12,7 +12,7 @@ sidebar_position: 5
 ## Consequences of Deleting a Pipeline
 
 1. `Sub-domain` on which the pipeline is deployed won't be functional anymore.
-2. All the associated kubernetes objects like `ingress`, `deployments`, `secrets` and `services` of the pipeline will also be deleted.
+2. All the associated Kubernetes objects like `ingress`, `deployments`, `secrets` and `services` of the pipeline will also be deleted.
 
 ## Recommendation before Deleting a Pipeline
 It is recommended to have a backup of your `YAML`, `docker file` and `secrets` before deleting a pipeline.
@@ -22,7 +22,7 @@ It is recommended to have a backup of your `YAML`, `docker file` and `secrets` b
 2. Click on `Projects`.
 3. Click on the `Pipelines` button.
 ![list-all-projects](./../../static/img/list-all-projects.png)
-4. Click on the `highlighted three dots` towards the right of respoective row.
+4. Click on the `highlighted three dots` towards the right of the respective row.
 ![list-all-pipelines](./../../static/img/list-all-pipelines.png)
 5. You will see `delete` button, click on this button.
 
@@ -36,3 +36,4 @@ Your pipeline will be deleted.
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

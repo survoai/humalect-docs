@@ -1,5 +1,5 @@
 ---
-description: Postgres installation on Humalect platform
+description: Postgres installation on the Humalect platform
 ---
 
 Humalect provides several databases that you can integrate and bring your data to the platform with minimal permissions from Humalect's side, in this article, we will be focusing on **Postgres**.
@@ -38,18 +38,18 @@ Let's create a Datasource with `Postgres version 14.11.0`
 
 Under the `Advanced Options`, enter the following details:
 
-| Authentication         | Desc | | General     | Desc |
+| Authentication | Desc | | General | Desc |
 | ---------------------- | ---- | -- | ----------- | ---- |
-| **postgres user password** |   PostgreSQL password for the `postgres` user when username is not postgres    | | **port number** | The default port for Postgres is 5432, but it can be configured to listen on a different port using this setting.     | |
-| **username**               |   PostgreSQL username. default value if `postgres`	   |             |     | |
-| **password**               |  PostgreSQL password	    | | | |
-| **database name**          |   PostgreSQL database   | | | |
+| **postgres user password** | PostgreSQL password for the `postgres` user when the username is not postgres | | **port number** | The default port for Postgres is 5432, but it can be configured to listen on a different port using this setting. | |
+| **username** | PostgreSQL username. default value if `postgres` | | | |
+| **password** | PostgreSQL password | | | |
+| **database name** | PostgreSQL database | | | |
 
 
-| Value                     | Master | Replica | Desc |
+| Value | Master | Replica | Desc |
 | ------------------------- | ------ | ------- | ---- |
-| **persistence size**          | 8Gi*   | 8Gi*    | This is a measure of size of a Postgres database and can vary depending on the amount and type of data stored, as well as the configuration of the Postgres instance.     |
-| **existing persistence name** |   -     |     -    |  If you already have previous persistent volume claim and want to reuse it, you directly attach it using this setting.    |
+| **persistence size** | 8Gi* | 8Gi* | This is a measure of size of a Postgres database and can vary depending on the amount and type of data stored, as well as the configuration of the Postgres instance. |
+| **existing persistence name** | - | - | If you already have previous persistent volume claim and want to reuse it, you directly attach it using this setting. |
 
 `*default value`
 
@@ -64,10 +64,10 @@ Under the `Advanced Options`, enter the following details:
 
 **Step 5:** Once the Postgres Datasource is successfully created, you'll see them listed in the DataSources tab with details like:
 
-		a. Datasource Name
-		b. Cluster Name
-		c. Database used
-		d. Database version used
+ a. Datasource Name
+ b. Cluster Name
+ c. Database used
+ d. Database version used
 
 **Step 6:** If you wish to **delete** the datasource, click on the vertical 3 dots next to the datasource card and click on `Delete`. This will initiate the deletion process.
 
@@ -82,3 +82,4 @@ TBD
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

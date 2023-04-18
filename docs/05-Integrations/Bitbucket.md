@@ -18,7 +18,7 @@ sidebar_position: 2
 
 > ## Prerequisites
 > 1. You or your organization must have an active Bitbucket account that contains the source code of the application.
-> 2. The **NAT-IP** for the cluster that is to be used should be whitelisted from the bitbucket account if you bitbucket account is not public.
+> 2. The **NAT-IP** for the cluster that is to be used should be whitelisted from the bitbucket account if your bitbucket account is not public.
 
 ## Connecting your Bitbucket Account
 
@@ -28,7 +28,7 @@ sidebar_position: 2
 ![bitbucket-connect](./../../static/img/bitbucket-connect.png)
 
 
-**Step 2:** Now, you will be redirected to bitbucket to authorize Humalect, click on the `grant access` button to authorize Humalect to access all or selected repositories from your Bitbucket account.
+**Step 2:** Now, you will be redirected to Bitbucket to authorize Humalect, click on the `grant access` button to authorize Humalect to access all or selected repositories from your Bitbucket account.
 
 > *On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.*
 
@@ -48,3 +48,4 @@ You can also check the connected repositories from the Dashboard and `integratio
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+
