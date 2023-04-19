@@ -1,5 +1,6 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
+title: 3. Bitbucket
 ---
 
 > ## This article covers
@@ -35,7 +36,9 @@ sidebar_position: 2
 
 **Step 2:** Now, you will be redirected to bitbucket to authorize Humalect, click on the `grant access` button to authorize Humalect to access all or selected repositories from your Bitbucket account.
 
-> *On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.*
+:::info
+On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.
+:::
 
 ![bitbucket-integration](./../../static/img/bitbucket-integration.png)
 

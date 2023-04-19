@@ -1,5 +1,6 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
+title: 1. GitHub
 ---
 > ## This article covers
 > 1. What is GitHub
@@ -37,7 +38,9 @@ Github is widely used by software developers, organizations, and open-source com
 
 **Step 2:** Now, you will be redirected to GitHub to authorize Humalect, click on the `Install and Authorize` button to authorize Humalect to access all or selected repositories from your GitHub account. 
 
-> *On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.*
+:::info
+On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.
+:::
 
 <br />
 
@@ -76,6 +79,7 @@ On the same page, you can also `Suspend` or `Uninstall` Humalect from your Githu
 You can revove the access of Humalect to access your code by going to https://github.com/settings/apps/authorizations and clicking on the `Revoke` button.
 
 -->
+
 
 
 

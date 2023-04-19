@@ -1,5 +1,6 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
+title: 2. Gitlab
 ---
 
 > ## This article covers
@@ -39,7 +40,9 @@ It allows teams to collaborate on code, track changes, and manage projects in a 
 
 **Step 2:** Now, you will be redirected to GitLab to authorize Humalect, click on the `Authorize` button to authorize Humalect to access all or selected repositories from your Gitlab account. 
 
-> *On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.*
+:::info 
+On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.
+:::
 
 
 
@@ -53,7 +56,7 @@ It allows teams to collaborate on code, track changes, and manage projects in a 
 
 Here, we keep our permissions to bare minimum, and need only:- 
 - **Access to the authenticated user's API**
-	*Grants complete read/write access to the API, including all groups and projects, the container registry, and the package registry*.
+	* Grants complete read/write access to the API, including all groups and projects, the container registry, and the package registry.
  
 
 <br/>
