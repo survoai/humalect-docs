@@ -5,7 +5,7 @@ sidebar_position: 1
 # Project Page Overview
 A project is a logical entity in which the user selects two options:
 1. The cluster on which the application is to be deployed
-2. The code respository that is to be deployed
+2. The code repository that is to be deployed
 
 <b>Note:-</b> Project is not a physical/infra entity, it is just a logical entity to map the cluster and code repo for application deployments.
 
@@ -29,3 +29,4 @@ To know more about creating a new project, visit [Create Project](./create-a-pro
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

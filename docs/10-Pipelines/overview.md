@@ -16,7 +16,7 @@ Pipeline is a logical entity, one level below the project. After selecting the c
 Let us consider an example of an ABCD Banking App to understand the pipelines better.
 ![pipelines-illustration](./../../static/img/pipelines-illustration.png)
 
-1. `ABCD  Bank` has it's Banking App which needs to run a cluster via Humalect's console.
+1. `ABCD Bank` has it's Banking App which needs to run a cluster via Humalect's console.
 
 2. The app's cluster will host multiple environments and projects.
 3. In this case, there are two running environments, i.e. test/testing and prod.
@@ -36,3 +36,4 @@ To know how to delete a pipeline in Humalect's console's dashboard, visit [Delet
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

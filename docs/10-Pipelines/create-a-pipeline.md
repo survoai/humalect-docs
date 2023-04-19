@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Create Pipeline
 
-To create a pipeline for a project, Go to Humalect console's `dashboard` -> Click on `Projects` ->  Click on `Pipelines` button next to your choice of project -> Click on `Create New Pipeline` button on top right on the pipelines page.
+To create a pipeline for a project, Go to Humalect console's `dashboard` -> Click on `Projects` -> Click on `Pipelines` button next to your choice of project -> Click on `Create New Pipeline` button on top right on the pipelines page.
 
 ![create-pipeline](./../../static/img/create-pipeline.png)
 
@@ -23,14 +23,14 @@ To create the pipeline, follow the steps below:-
 4. Select the `branch` that you want to deploy in this pipeline
 5. Select the `environment` which you want to use for all the deployments of this pipeline
 6. Choose whether you want `CD enabled` or not. CD stands for Continuous Deployment, all your commits to this branch will be auto-deployed if this is checked.
-7. (optional) if you want to use a `datasource` created in previous steps in your pipeline, select it from the `Select Datasource` drop down.  
+7. (optional) If you want to use a `datasource` created in previous steps in your pipeline, select it from the `Select Datasource` drop down. 
 ![connect-datasource](./../../static/img/connect-datasource.png)
 
-If you wish to connect any datasource to the pipeline, you can select it and add it's respective connection string in the environmnet variables in the next step.
+If you wish to connect any datasource to the pipeline, you can select it and add it's respective connection string in the environment variables in the next step.
 We currently support three datasources namely: Redis, MongoDB and PostgreSQL.
 To know more about datasources, visit [Datasource](./../Datasources/Overview).
 
-8. Next, enter the `environment variables` for your pipeline. You can either add it one by one or use `Env Format` tab and paste your .env file directly. These environments variables will be securely stored in vault/secret-manager in your cloud account. Humalect doesn't access your secrets.
+8. Next, enter the `environment variables` for your pipeline. You can either add it one by one or use `Env Format` tab and paste your .env file directly. These environment variables will be securely stored in vault/secret-manager in your cloud account. Humalect doesn't access your secrets.
 
 ![add-environment-variables](./../../static/img/add-environment-variables.png)
 
@@ -63,3 +63,4 @@ After you have entered all the required necessities mentioned above, click on th
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

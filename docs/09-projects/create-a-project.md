@@ -8,7 +8,7 @@ sidebar_position: 2
 There should be a running cluster to host the project.
 
 ## Create Project
-1. To start creating a project, go to Humalect console's `dashboard` -> click on `Project` -> click on `Create New Project` button on top right.
+1. To start creating a project, go to the Humalect console's `dashboard` -> click on `Project` -> click on `Create New Project` button on top right.
 
 ![create-project](./../../static/img/create-project.png)
 
@@ -16,7 +16,7 @@ There should be a running cluster to host the project.
 3. Give a brief description about the project. The description might include:- What the project is about?, What is the scope of the project, etc.
 4. Select a `cluster` on which you want to host your project.
 
-5. Select a `Repository` from the linked code repositories..
+5. Select a `Repository` from the linked code repositories.
 ![select-repo](./../../static/img/select-repo.png)
 
 6. Select a `coding language` in which your code has been written. This helps populate a corresponding Dockerfile in subsequent steps
@@ -29,3 +29,4 @@ After you have entered all the required necessities mentioned above, click on th
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

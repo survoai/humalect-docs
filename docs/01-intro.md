@@ -16,7 +16,7 @@ We started speaking to other engineers and everyone could relate to the struggle
 3. Months spent setting up and maintaining open-source software and versioning
 4. People are locked into various DevOps solutions and fear heavy migration debt to adopt better solutions
 5. Things like security and scalability are an afterthought
-6. DevOps teams are always overworked due to lack of visibility across various dev teams. The empathy towards DevOps teams and collaboration among multiple engineering teams needs to increase where everyone has visibility into infrastruture and release process.
+6. DevOps teams are always overworked due to lack of visibility across various dev teams. The empathy towards DevOps teams and collaboration among multiple engineering teams needs to increase where everyone has visibility into infrastructure and release process.
 
 **This leads to**
 
@@ -29,11 +29,11 @@ We started speaking to other engineers and everyone could relate to the struggle
 
 **The proposed solution – Humalect**
 
-Use Humalect platform to knit best possible solutions for the most common DevOps scenarios.
+Use the Humalect platform to knit the best possible solutions for the most common DevOps scenarios.
 
 Starting from your infrastructure to how your application gets deployed to monitoring it and letting you know if something goes down, all of it pre configured to run in your own cloud account.
 
-Secure and scalable infrastruture and application deployments delivered in minutes.
+Secure and scalable infrastructure and application deployments delivered in minutes.
 
 All you need to do is to bring your code repositories and your cloud account.
 
@@ -43,7 +43,7 @@ Everything stays in your cloud; we don’t lock you in.
 
 1. K8s clusters and stable environments created in your cloud account via auto generated IaC templates using best cloud and security practices
 2. CI/CD enabled deployments directly from your repositories in a click
-3. Built in observability to help you bebug easily and keep track of resource usage
+3. Built in observability to help you debug easily and keep track of resource usage
 4. Auto scalability of infrastructure and your application guaranteed from day 1
 6. in-built support for creation of terraform, Dockerfile and YAML templates.
 7. inbuilt logging and metrics for quick debugging, integrations with leading tools for deeper insights
@@ -52,10 +52,10 @@ Everything stays in your cloud; we don’t lock you in.
 **It can be beneficial for your team if you can relate to points below:**
 
 1. Small team (upto 100 engineers):
-- your dev teams are spending a lot of time managing cloud/infrastruture
+- your dev teams are spending a lot of time managing cloud/infrastructure
 - you have delayed sprints due to infra/env instability
 - you have to go live by a deadline or you have customers waiting but you don't seem to have a go live plan
-- You need a saviour to take you out of your misery
+- You need a savior to take you out of your misery
 
 2. Large team (>100 engineers)
 - You have a lot of tech debt/lock-in due to your past stack/infra/cloud choices and now you are looking to move to latest technologies available
@@ -71,3 +71,4 @@ Everything stays in your cloud; we don’t lock you in.
 - better collaboration among your team as siloing goes away
 - better developer productivity
 - scalable infrastructure and full visibility via integrations
+

@@ -13,12 +13,12 @@ visit https://humalect.com and sign up. Complete the registration flow and log i
 ---
 ## Integrate your Cloud Provider
 
-You need to connect your cloud provider with Humalect so that we can seemlessly ship your deployments and commits. Currently we support only AWS and Azure cloud platforms. In order to connect AWS and Azure, you can visit [this link](https://console.humalect.com/user/integrations) and follow their respective workflows.
+You need to connect your cloud provider with Humalect so that we can seamlessly ship your deployments and commits. Currently we support only AWS and Azure cloud platforms. In order to connect AWS and Azure, you can visit [this link](https://console.humalect.com/user/integrations) and follow their respective workflows.
 
 ---
 ## Integrate your Source Code Provider
 
-We need to integrate with your Source Code Provider to automatically build your commits and provide you with options to run various environments from your source code repositories and their branches. Currently, we support Gitlab, Github and Bitbucket. In order to connect with bitbucket, you can visit  [Integrating Bitbucket with Humalect](./../docs/Integrations/Bitbucket).
+We need to integrate with your Source Code Provider to automatically build your commits and provide you with options to run various environments from your source code repositories and their branches. Currently, we support Gitlab, GitHub and Bitbucket. In order to connect with Bitbucket, you can visit [Integrating Bitbucket with Humalect](./../docs/Integrations/Bitbucket).
 <!-- TODO
 2. [Integrating Gitlab with Humalect](to-be-added).
 3. [Integrating Github with Humalect](to-be-added). -->
@@ -26,7 +26,7 @@ In order to connect Github and Gitlab, you can visit [this link](https://console
 
 ---
 ## Create a Kubernetes Cluster
-To host your deployments, we will need a kubernetes cluster that will have the respective deployments, services and ingress. We have got you covered with that as well. You just need to follow few steps mentioned in the doc linked below with respect to your cloud provider and your Kubernetes cluster is good to go.
+To host your deployments, we will need a Kubernetes cluster that will have the respective deployments, services and ingress. We have got you covered with that as well. You just need to follow few steps mentioned in the doc linked below with respect to your cloud provider and your Kubernetes cluster is good to go.
 
 1. [Creating an AWS cluster with Humalect](./../docs/Clusters/create-an-AWS-cluster).
 
@@ -35,13 +35,13 @@ To host your deployments, we will need a kubernetes cluster that will have the r
 
 ---
 ## Create the Desired Environments
-You might need multiple environments such as staging, development and production. Humalect platform uses kubernetes namescapes to host your environments.  
+You might need multiple environments such as staging, development and production. Humalect platform uses Kubernetes namescapes to host your environments. 
 To learn more about how to create environments, please visit [environments](./../docs/Environments/Overview)
 
 
 ---
 ## Create Datasources
-Humalect datasources allow you to deploy your choice of databases/caches in your kubernetes cluster in a few clicks. The data is safely stored in persistence volumes with your cloud provider. We currently support Redis, MongoDB and Postgres.
+Humalect datasources allow you to deploy your choice of databases/caches in your Kubernetes cluster in a few clicks. The data is safely stored in persistence volumes with your cloud provider. We currently support Redis, MongoDB and Postgres.
 Visit the links below for instructions on how to create your databases.
 
 1. [Creating Redis with Humalect](./../docs/Datasources/Redis)
@@ -66,3 +66,4 @@ Once you are done creating your pipeline, there are two ways to deploy your code
 2. **Automatically deploying the pipeline using CD** -> If you have checked the `CD enabled` box while creating your pipeline, all your future commits will be automatically deployed.
 
 You have now onboarded successfully on the Humalect platform. Do reach out to us for questions and feedback!
+

@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
-title: Datasources overview
-description: Databases and caches supported by Humalect platform
+title: Datasources Overview
+description: Databases and caches supported by the Humalect platform
 ---
 
 ## What do we mean by data sources?
@@ -17,11 +17,11 @@ Ephermal databases on demand made easy.
 
 ## List of Databases and their supported versions
 
-> | Name     | Version supported        | Version Details |
+> | Name | Version supported | Version Details |
 > | -------- | ------------------------ | -- |
-> | MongoDB  | `v6.0.1`, `v5.0.10` | [LINK](https://www.mongodb.com/evolved) |
-> | Redis    | `v7.0.4`, `v6.2.7`       |[LINK](https://redis.io/download/#:~:text=Stable%20(6.2.6)) |
-> | Postgres | `v14.11.0`,  `v11.14.0`  |[LINK](https://www.postgresql.org/support/versioning/) |
+> | MongoDB | `v6.0.1`, `v5.0.10` | [LINK](https://www.mongodb.com/evolved) |
+> | Redis | `v7.0.4`, `v6.2.7` |[LINK](https://redis.io/download/#:~:text=Stable%20(6.2.6)) |
+> | Postgres | `v14.11.0`, `v11.14.0` |[LINK](https://www.postgresql.org/support/versioning/) |
 
 ## Steps to create a Datasource in Humalect
 
@@ -48,7 +48,7 @@ Follow these steps to create a new datastore:
 
 ## Can these datasources be used in production?
 
-These datasources are meant to be used in a ephermal way and are best suited for non-production workloads.
+These datasources are meant to be used in an ephermal way and are best suited for non-production workloads.
 
 ## Is my data fault tolerant?
 
@@ -60,3 +60,4 @@ All the data is safe as we use PVs and PVCs to store your data. All the data is 
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

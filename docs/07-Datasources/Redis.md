@@ -1,5 +1,5 @@
 ---
-description: Redis installation on Humalect platform
+description: Redis installation on the Humalect platform
 ---
 
 Humalect provides several databases that you can integrate and bring your data to the platform with minimal permissions from Humalect's side, in this article, we will be focusing on **Redis**.
