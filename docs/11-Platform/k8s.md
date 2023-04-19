@@ -3,11 +3,6 @@ title: Setups access to k8s cluster
 sidebar_position: 4
 ---
 
-> ## This article covers
-> 1. How do I setup access to my k8s cluster? 
-> a. For AWS 
-> b. For AWS
-
 
 # Setup Access to your Kubernetes Cluster:
 
@@ -95,5 +90,7 @@ Name of resource group. You can configure the default group using `az configure 
 
 
 
+
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

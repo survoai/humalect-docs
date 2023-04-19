@@ -1,12 +1,7 @@
 ---
 sidebar_position: 5
-title: 4. Datadog
+title: Datadog
 ---
-
-> ## This article covers
-> 1. What is Datadog?
-> 2. Prerequisites
-> 3. Connect Datadog with Humalect
 
 **Humalect** provides Datadog as one of the Monitoring integrations.
 
@@ -41,4 +36,5 @@ To connect Humalect to Datadog, refer to these steps.
  
 
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

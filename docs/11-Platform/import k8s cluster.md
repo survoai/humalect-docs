@@ -3,10 +3,6 @@ title: Import an existing k8s cluster to Humalect
 sidebar_position: 3
 ---
 
-> ## This article covers:-
-> 1. Import an existing Kubernetes Cluster to Humalect? <br/>
-> 	a. For AWS <br/>
-> 	b. For Azure
 
 
 
@@ -83,5 +79,7 @@ Asia Pacific / Jio India West / South India
 
 
 
+
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

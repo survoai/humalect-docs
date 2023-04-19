@@ -1,14 +1,10 @@
 ---
 sidebar_position: 2
-title: 1. GitHub
+title: GitHub
 ---
-> ## This article covers
-> 1. What is GitHub
-> 2. GitHub Use Cases
-> 3. Connecting your GitHub Account
 
 
-**Humalect** provides GitLab as one of the source code provider integrations.
+**Humalect** provides GitHub as one of the source code provider integrations.
 
 ## What is GitHub?
 **Github** is a web-based platform for version control and collaboration on code projects. It allows multiple users to work on a single codebase and track changes made by each user. It also offers project management tools and integrates with CI/CD tools for automated deployment.
@@ -83,4 +79,7 @@ You can revove the access of Humalect to access your code by going to https://gi
 
 
 
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+
+### Troubleshooting
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

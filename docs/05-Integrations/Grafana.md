@@ -1,12 +1,8 @@
 ---
 sidebar_position: 6
-title: 5. Grafana Cloud
+title: Grafana Cloud
 ---
 
-> ## This article covers
-> 1. What is Grafana?
-> 2. Prerequisites
-> 3. Connect Grafana with Humalect
 
 **Humalect** provides Grafana as one of the open source Monitoring integrations.
 
@@ -46,8 +42,8 @@ After you have successfully entered the above details, you'll see a screen shown
 
 
 :::info
-Find all the details mentioned below from here - https://grafana.com/orgs/priyansh1/
-P.s. - Change the username to your organization name. 
+Find all the details mentioned below from here - https://grafana.com/orgs/<org_name>/ <br/>
+
 :::
 
 
@@ -83,5 +79,7 @@ The above picture shows various metrics dashboards of the apps connected to Huma
 
 
 
+
 ### Troubleshooting
-Need help? Contact [Humalect support.](https://humalect.com/)
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+

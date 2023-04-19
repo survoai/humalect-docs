@@ -1,13 +1,8 @@
 ---
 sidebar_position: 8
-title: 7. AWS
+title: AWS
 ---
 
-
-> ## This article covers
-> 1. What is AWS
-> 2. AWS Use Cases
-> 3. Connecting your AWS Account
 
 
 **Humalect** provides AWS as one of the cloud provider integrations.
@@ -48,7 +43,7 @@ AWS also provides tools for security and compliance, such as AWS Identity and Ac
 
 <br/>
 
-**Step 4:** In the next step, there will be a Predefined CloudFormation template that Humalect has created for you. This template will create some IAM roles and policies inside your account through which you can create the infrastructure really easily.
+**Step 4:** In the next step, you will be taken to a  pre-defined CloudFormation template. This template will create an IAM role inside your account which will be used to create and manage infrastructure in your account. Humalect platform assumes this role on your request via the console, we do not take access to your AWS account.
 
 ![quick-create-stack](./../../static/img/quick-create-stack.jpeg)
 
@@ -56,12 +51,11 @@ AWS also provides tools for security and compliance, such as AWS Identity and Ac
 
 **Step 5:** Click on the `Create Stack` button at the bottom of the page, it will take around 30 seconds to process and your cloud account will be connected to Humalect. 
 
-**Step 6:** Back in the You'll see a successful tag in the UI after performing the above mentioned steps. 
+**Step 6:** Once you are done creating the CloudFormation stack, return back to the Humalect console and you will see that your AWS account is now connected. You can also look at the permissions that the created role inside your account has.
 
 
 ![aws-connect](./../../static/img/aws-connect.png)
 
 
-
 ### Troubleshooting
-Need help? Contact [Humalect support.](https://humalect.com/)
+Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us

@@ -11,14 +11,6 @@ This article will walk you through the various Role Based Access Control options
 You need to have Pro plan to access this feature.
 :::
 
-> ## This article covers:-
-> 1. RBAC Roles
-> 	a. Add Role
-> 2. Assign Roles
-> 	a. Update Role
-> 3. Assign Permissions
-> 	a. Update Permissions
-
 ## RBAC Roles
 In this section, can see the created **Roles**, their **Descriptions**, **Permissions** and **Actions** in a tabular form. 
 
@@ -113,6 +105,10 @@ So overall the hierarchy looks like **integrations**->**clusters**->**projects**
 
 While assigning any permission for a resource, read permission for all upstream resources also needs to be provided.
 :::
+
+
+### Troubleshooting
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
 
 
 

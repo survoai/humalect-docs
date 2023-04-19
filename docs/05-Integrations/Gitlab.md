@@ -1,12 +1,7 @@
 ---
 sidebar_position: 3
-title: 2. Gitlab
+title: Gitlab
 ---
-
-> ## This article covers
-> 1. What is GitLab
-> 2. GitLab Use Cases
-> 3. Connecting your GitLab Account
 
 
 **Humalect** provides GitLab as one of the source code provider integrations.
@@ -84,6 +79,7 @@ You can revove the access of Humalect to access your code by going to [https://g
 
 
 
+
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
 

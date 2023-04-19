@@ -6,15 +6,6 @@ sidebar_position: 1
 This article will walk you through the various options that you will see under the [Admin Section](https://console.humalect.com/user/profile) of the Humalect Platform. 
 
 
-> ## This article covers:-
-> 1. User Information
-> 2. Organization Information
-> 3. Subscriptino Plans
-> 4. Change Password
-> 5. Credits
-> 6. Manage User Invites
-> 7. Other Settings and Preferences Settings
-
 
 
 Now let's discuss each of them in more detail:
@@ -141,8 +132,10 @@ By default, this value will be set to `False` so you do not accidentally delete 
 :::
 
 
+
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+
 
 
 

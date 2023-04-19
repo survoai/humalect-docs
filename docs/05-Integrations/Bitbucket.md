@@ -1,12 +1,6 @@
 ---
-sidebar_position: 4
-title: 3. Bitbucket
+sidebar_position: 2
 ---
-
-> ## This article covers
-> 1. What is Bitbucket
-> 2. Bitbucket Use Cases
-> 3. Connecting your Bitbucket Account
 
 **Humalect** provides Bitbucket as one of the source code provider integrations.
 
@@ -24,7 +18,7 @@ title: 3. Bitbucket
 
 > ## Prerequisites
 > 1. You or your organization must have an active Bitbucket account that contains the source code of the application.
-> 2. The **NAT-IP** for the cluster that is to be used should be whitelisted from the bitbucket account if you bitbucket account is not public.
+> 2. The **NAT-IP** for the cluster that is to be used should be whitelisted from the bitbucket account if your bitbucket account is not public.
 
 ## Connecting your Bitbucket Account
 
@@ -34,11 +28,9 @@ title: 3. Bitbucket
 ![bitbucket-connect](./../../static/img/bitbucket-connect.png)
 
 
-**Step 2:** Now, you will be redirected to bitbucket to authorize Humalect, click on the `grant access` button to authorize Humalect to access all or selected repositories from your Bitbucket account.
+**Step 2:** Now, you will be redirected to Bitbucket to authorize Humalect, click on the `grant access` button to authorize Humalect to access all or selected repositories from your Bitbucket account.
 
-:::info
-On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.
-:::
+> *On the redirected page, you will clearly be able to see all the access and permissions that you will grant to Humalect.*
 
 ![bitbucket-integration](./../../static/img/bitbucket-integration.png)
 
@@ -54,7 +46,6 @@ You can also check the connected repositories from the Dashboard and `integratio
 ![integration-all-source-control](./../../static/img/integration-all-source-control.png)
 
 
-
-
 ### Troubleshooting
-Need help? [Contact](https://docs.humalect.com/en/contact) us.
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+
