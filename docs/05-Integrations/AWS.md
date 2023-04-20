@@ -57,5 +57,7 @@ AWS also provides tools for security and compliance, such as AWS Identity and Ac
 ![aws-connect](./../../static/img/aws-connect.png)
 
 
+
 ### Troubleshooting
-Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us
+Need help? [Contact](./../Contact-us/reach-out-to-us) us
+
