@@ -55,6 +55,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      announcementBar: {
+        id: 'support_us',
+        content:
+          '<img width = 110px src="https://uploads-ssl.webflow.com/62a05f04f6ddb811f3b8c583/63295fad2421a676e1c75764_Humalect%20logo%20footer.svg">  We are launching soon on  <a target="_blank" rel="noopener noreferrer" href="https://www.producthunt.com/products/humalect-deploy-on-kubernetes-in-30-min">Product Hunt! </a> 🚀 ',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
+  
       navbar: {
         title: '',
         logo: {
@@ -85,7 +94,7 @@ const config = {
           },
 
           {
-            href: 'https://the-deployers-network.slack.com/join/shared_invite/zt-1prmynkvr-aalDl9nOjpKuoROXRLH8wQ#/shared-invite/email',
+            href: 'https://join.slack.com/t/the-deployers-network/shared_invite/zt-1skzfl084-6_Z5z1iPx0aDRpzaZXQH7A',
             label: 'Join Community',
             position: 'right',
           },
