@@ -69,5 +69,5 @@ You have now onboarded successfully on the Humalect platform. Do reach out to us
 
 
 ### Troubleshooting
-Need help? [Contact](./../Contact-us/reach-out-to-us) us
+Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us
 

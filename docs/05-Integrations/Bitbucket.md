@@ -47,5 +47,5 @@ You can also check the connected repositories from the Dashboard and `integratio
 
 
 ### Troubleshooting
-Need help? [Contact](./../Contact-us/reach-out-to-us) us
+Need help? [Contact](./Contact-us/reach-out-to-us) us
 
