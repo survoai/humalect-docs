@@ -44,4 +44,3 @@ You can also check the connected repositories from the Dashboard and `integratio
 
 
 ![integration-all-source-control](./../../static/img/integration-all-source-control.png)
-

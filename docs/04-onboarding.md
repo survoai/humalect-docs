@@ -66,5 +66,3 @@ Once you are done creating your pipeline, there are two ways to deploy your code
 2. **Automatically deploying the pipeline using CD** -> If you have checked the `CD enabled` box while creating your pipeline, all your future commits will be automatically deployed.
 
 You have now onboarded successfully on the Humalect platform. Do reach out to us for questions and feedback!
-
-
