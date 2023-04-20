@@ -68,6 +68,3 @@ Once you are done creating your pipeline, there are two ways to deploy your code
 You have now onboarded successfully on the Humalect platform. Do reach out to us for questions and feedback!
 
 
-### Troubleshooting
-Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us
-
