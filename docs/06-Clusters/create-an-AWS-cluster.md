@@ -92,7 +92,38 @@ A cluster creation can take about 10-15 minutes, depending on the cloud provider
 Once the AWS cluster is successfully created, you'll see the details like DNS URL, VPC Name, Public and Private subnets, cluster version, etc. 
 
 
- 
+![aws-cluster-deets](./../../static/img/aws-cluster-deets.png)
+
+To Create CDN (Content Delivery Network),
+
+1. Click on the `Create CDN` button from the cluster details page.
+
+![aws-create-cdn](./../../static/img/aws-create-cdn.png)
+
+1. Next, Click on the `Create Certificate to get started` button, you will see a prompt with the following message.
+
+
+```
+Add CNAME record with following name and values for each 
+domain to proceed further.
+
+It usually takes 5-10 minutes for the certificate to be issued, you
+can check by clicking refresh status button.
+
+CRN: arn:aws:acm:us-east-1:073328469200:certificate c5efb264-18c1-490a-9fa4-94746dc72012
+
+```
+
+| Domain | Name |	Value	| Status | 
+| ----   |    --- |  ----  | -- |
+| *.org3cluster32.humalect.dev	|  _e3d0532e33035aabe4793fda94fbxxxx.org3cluster32.humalect.dev |  _620d16146c823bcfb77e903a0561xxxx.fgsdscwdjl.acm-validations.aws | PENDING_VALIDATION |
+
+
+![aws-create-cert-1](./../../static/img/aws-create-cert-1.png)
+
+3. Once you have successfully added the CNAME record, refresh the status by clicking the ♺ button, it should change to `VALIDATED`.
+
+4. Next, click on the `Create` button to start creating the certificates, it can take around 5 minutes before the cretificates are fully created for you.
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
