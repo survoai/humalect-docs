@@ -61,6 +61,42 @@ Please ensure that you use the below mentioned `variable names` if you are editi
 
 After you have entered all the required necessities mentioned above, click on the `Create Pipeline` button at the bottom right.
 
+
+## Verify the subdomain
+
+After the pipelines has been successfully created, you need to verify the domain and link the domain with load balancer URL/IP in DNS provider settings. Refer the images below.
+
+![pipelines-domain](./../../static/img/pipelines-domain.png)
+
+Refresh the status of Subdomain by clicking the ♺ button. If you see a green tickmark ✅, voila!, it's verified, else if its a ❌, follow the below mentioned steps.
+
+:::note
+All the subdomains which are freshly created will be unverified ❌ by default.
+:::
+
+![pipelines-domain-connect](./../../static/img/pipelines-domain-connect.png)
+
+Add the following record values in the DNS of your domain provider  for the following 2 fields:
+1. Domain Name and, 
+2. Domain Value.
+
+```
+Domain Name: py-mongo.march.humalect.dev OR *.march.humalect.dev
+
+Domain Value: 20.204.200.195
+```
+
+Return back to Humalect and press the ♺ button to confirm if the subdomain is properly working or not.
+
+
+:::info
+You can also get the DNS URL from the cluster details page and a list of connected domains.
+:::
+
+![pipelines-cluster-deets](./../../static/img/pipelines-cluster-deets.png)
+
+That's all for now. If you still get into trouble adding or verifying the domains, get in touch with us. 
+
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
 

@@ -137,8 +137,40 @@ The NCv3-series sizes are optimized for compute-intensive GPU-accelerated applic
 
 After you select from the above virtual machines, click on the `Create Cluster` button at the bottom right.
 
-It will take around 15 mins for your cluster to be provisioned.
+:::note 
+A cluster creation can take about 10-15 minutes, depending on the cloud provider.
+:::
 
+
+## Create ACR role in Azure Cluster
+
+Once the Azure cluster is successfully created, you'll see the details like DNS URL, ARC Role link, cluster version, etc. 
+
+
+![pipelines-cluster-deets](./../../static/img/pipelines-cluster-deets.png)
+
+
+
+### Create an ACR Role for cluster to pull ACR images
+
+
+Please visit the ACR (Azure Container Registry) Role Link and follow the below mentioned steps:
+1. Select `AcrPull` role from the roles and click next.
+2. Select managed identity and click on select members
+3. In the managed identities section, select managed identity as User-assigned managed identity.
+4. Select `<cluster-name>-agentpool` and then click on select button.
+5. Click on Review+assign button to finish role creation.
+
+more details [here.](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-roles?tabs=azure-cli)
+
+:::note
+Please ensure That the Azure ACR role is assigned to the cluster before creating projects.
+:::
+
+You can also click on the `HELP` button on the cluster details UI to see the steps for creating ARC roles.
+
+
+![arc-roles](./../../static/img/arc-roles.png)
 
 
 ### Troubleshooting

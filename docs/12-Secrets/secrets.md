@@ -4,7 +4,7 @@ title: Secrets Manager
 ---
 
 
-Humalect comes with a new feature called "Secrets" which allows users to store their environment variables and in their own cloud inside the Kubernetes cluster. In this documentation, we will discuss the features of Humalect's Secrets and how to use them effectively.
+Humalect comes with a new feature called "Secrets" which allows users to store their environment variables securely in their own cloud account. In this documentation, we will discuss the features of Humalect's Secrets and how to use them effectively.
 
 ## Features of Secrets:
 
