@@ -83,7 +83,15 @@ Memory-optimized instances are designed to deliver fast performance for workload
 
 After you select any one of the machines from the above options, click on the `create cluster` button at the bottom right to start creating your cluster.
 
-> **Note: A cluster creation can take about 10-15 minutes, depending on the cloud provider.**
+:::note 
+A cluster creation can take about 10-15 minutes, depending on the cloud provider.
+:::
+
+## Create CDNs in AWS Cluster
+
+Once the AWS cluster is successfully created, you'll see the details like DNS URL, VPC Name, Public and Private subnets, cluster version, etc. 
+
+
 
 
 ### Troubleshooting

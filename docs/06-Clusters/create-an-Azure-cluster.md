@@ -137,8 +137,9 @@ The NCv3-series sizes are optimized for compute-intensive GPU-accelerated applic
 
 After you select from the above virtual machines, click on the `Create Cluster` button at the bottom right.
 
-It will take around 15 mins for your cluster to be provisioned.
-
+:::note 
+A cluster creation can take about 10-15 minutes, depending on the cloud provider.
+:::
 
 
 ## Create ACR role in Azure Cluster
