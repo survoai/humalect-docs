@@ -92,7 +92,7 @@ A cluster creation can take about 10-15 minutes, depending on the cloud provider
 Once the AWS cluster is successfully created, you'll see the details like DNS URL, VPC Name, Public and Private subnets, cluster version, etc. 
 
 
-
+ 
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
