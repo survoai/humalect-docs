@@ -58,7 +58,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          'We are live on  <a target="_blank" rel="noopener noreferrer" href="https://www.producthunt.com/posts/humalect-deploy-on-kubernetes-in-30-min">Product Hunt! </a> 🚀 ',
+          'We became #1 Product of the Day on  <a target="_blank" rel="noopener noreferrer" href="https://www.producthunt.com/posts/humalect-deploy-on-kubernetes-in-30-min">Product Hunt! </a> 🚀 ',
         backgroundColor: '#fafbfc',
         textColor: '#091E42',
         isCloseable: false,
