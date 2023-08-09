@@ -63,7 +63,7 @@ const config = {
         textColor: '#091E42',
         isCloseable: false,
       },
-  
+
       navbar: {
         title: '',
         logo: {
@@ -125,6 +125,18 @@ const config = {
         anonymizeIP: true,
       },
     ],
+        [
+          "posthog-docusaurus",
+          {
+            apiKey: "phc_BnOTgbEN3PMzeSeoijLj5tDS9sd9C3QzsOJDAfgPoul",
+            appUrl: "https://app.posthog.com", // optional
+            enableInDevelopment: false, // optional
+            // other options are passed to posthog-js init as is
+          },
+        ],
+
+
+
   ],
 };
 
