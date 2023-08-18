@@ -94,7 +94,7 @@ const config = {
           },
 
           {
-            href: 'https://join.slack.com/t/the-deployers-network/shared_invite/zt-1skzfl084-6_Z5z1iPx0aDRpzaZXQH7A',
+            href: 'https://humalect.com/the-deployers-network',
             label: 'Join Community',
             position: 'right',
           },
