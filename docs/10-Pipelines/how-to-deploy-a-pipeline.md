@@ -2,37 +2,93 @@
 sidebar_position: 4
 ---
 
-# How to deploy a pipeline?
+# Pipeline Deployment Process
+
 ## What is Deployment?
 
-A deployment is an instance of a pipeline execution (which pulls the code from the source code repository, builds it and releases it in a particular environment).
+After the creation of a pipeline, the next step is initiating its deployment. This can be achieved through two primary methods: 
+1. Direct commits on code repositories and 
+2. Manual deployments via the pipelines page user interface (UI). 
+   
+The overarching goal is to facilitate the release of code changes to users in a controlled and efficient manner.
 
-Once the pipeline is created, it can be deployed via direct commits on code repositories (if CD is enabled) or manual deployments from the pipelines page UI.
+### 1. Direct Commits (Continuous Deployment, CD):
+If the continuous deployment (CD) feature is enabled in the pipeline, any code commits made to the associated code repository trigger automatic deployments. This streamlines the process, as each code commit is swiftly transformed into a live deployment. 
 
-## Accessing the deployment page
-1. Go to Humalect console's `dashboard`.
-2. Click on `Projects`. Select a Project of your choice.
-3. Click on `Pipelines`. Select a Pipeline of your choice.
-4. Click on `Deployments` and you will see the page as below.
+This approach minimizes the delay between code development and user accessibility, enhancing development velocity and user satisfaction.
 
-![deploy-pipeline](./../../static/img/deploy-pipeline.png)
+### 2. Manual Deployments from UI:
+Alternatively, manual deployments can be initiated from the pipelines page's user interface. This grants developers more control over the release process. They can review the code changes, ensure that everything is in order, and then manually trigger the deployment. 
+
+This approach is particularly useful for situations where a more cautious, hands-on approach to releasing code is desired, or when additional checks are necessary before deployment.
+
+### Understanding Deployment:
+A deployment signifies an instance of executing a pipeline. This process encompasses a series of stages: fetching code from the designated source code repository, building it to create the application or service, and finally, releasing it into the operational environment where users can engage with it. 
+
+A successful deployment indicates that the code is ready to be consumed by users, while also ensuring that any testing, validation, and preparation steps have been successfully completed.
+
+
+## Accessing the Deployment Page
+
+To access the Deployment Page in the Humalect console, follow these steps:
+
+1. Navigate to the `dashboard` within the Humalect console.
+2. Select the `Pipelines` option. Choose a specific Pipeline from the list.
+3. Click on the `Deployments` button. This action will lead you to the page illustrated below.
+
+![deploy-pipeline](./../../static/img/deploy_pipeline.png)
 
 ## Components of Deployments
-1. At the top, you can see the name of the `project`, `cluster`, and `repository` with which your pipeline is created.
-2. You can see the `branch` and the `environment`(default in this case), to which your pipeline is linked.
-3. `Deploy Pipeline` button can be used for manual deployment of the pipeline.
-4. `Show Metrics and Logs` shows real time `CPU` and `memory` usage of your deployment. It also streams the logs of your existing Kubernetes deployment.
-5. `Time` field displays timestamp of the deployment.
-6. `Trigger` shows the type of deployment, it can be `manual` or `automatic`. The value of the field is `automatic` if `CD` was enabled in pipeline and `manual` if the pipeline was deployed manually.
-7. `Commit` field redirects the user to the exact git commit which was deployed.
-8. `Deployment` field shows the deployment progress
-9. `Status` fields shows the status of various steps involved. 
 
-## What are various ways of deploying my pipeline?
-There are two ways of deploying your pipeline via Humalect's console:
-1. <b>Manual</b>: It could be done by clicking on the `Deploy Pipeline` button.
-2. <b>Automatic</b>: Deployment happens automatically on every commit in the specific branch of the source code repository.
+The Deployment Page provides various components to facilitate the management of your pipelines and deployments:
 
+1. **Pipeline Details:**
+   At the top section, you can observe essential details about the pipeline:
+   - Name of the `Pipeline`
+   - Associated `Cluster`
+   - Linked `Repository` for the pipeline's creation.
+   
+   ![deploy-pipeline](./../../static/img/deployments_1.png)
+
+2. **Branch and Environment:**
+   Information regarding the specific `branch` and `environment` (default by default) to which the pipeline is connected.
+
+3. **Manual Redeployment:**
+   The `Deploy Pipeline` button allows manual re-deployment of the pipeline when needed.
+
+4. **Real-time Metrics and Logs:**
+   Clicking the `Show Deployment Metrics` button provides real-time insights into `CPU` and `memory` usage for the deployment. Additionally, it offers live streaming of logs from the existing Kubernetes deployment.
+   
+   ![deploy-pipeline](./../../static/img/deployments_5.png)
+
+5. **Deployment Timestamp:**
+   The `Time` field displays the timestamp of the deployment.
+
+6. **Deployment Trigger:**
+   The `Trigger` field indicates the deployment type, distinguishing between `Manual` and `Automatic`. This designation is based on whether Continuous Deployment (`CD`) was enabled for the pipeline, leading to an `Automatic` trigger, or if the deployment was initiated manually, resulting in a `Manual` trigger.
+
+7. **Associated Git Commit:**
+   The `Commit` field serves as a hyperlink that directs the user to the specific git commit version that was deployed.
+
+8. **Deployment Progress:**
+   The `Deployment` field tracks and displays the progress of the ongoing deployment.
+    
+    ![deploy-pipeline](./../../static/img/deployments_4.png)
+
+9. **Status Tracking:**
+   The `Status` field provides insight into the current status of various involved steps.
+    
+   ![deploy-pipeline](./../../static/img/deployment_6.png)
+ 
+10. **Redeploying Failed Deployment:**
+    In cases of deployment failures, a user can initiate a redeployment by clicking on the three dots located on the far right of the corresponding deployment entry. Selecting `Deploy` from the options provided will trigger the redeployment process.
+    
+    ![deploy-pipeline](./../../static/img/deployments_2.png)
+
+11. **Viewing All Deployments:**
+    By default, the user interface displays the most recent 2 deployments. To view a comprehensive list of all deployments, both successful and failed, click on the `Show All` button located on the right-hand side.
+    
+    ![deploy-pipeline](./../../static/img/deployments_3.png)
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
