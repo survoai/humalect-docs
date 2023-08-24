@@ -22,8 +22,7 @@ sidebar_position: 2
 |14. | MongoDB | The famous NoSQL database. | [MongoDB](./../docs/Datasources/MongoDB) |
 |15. | Pipelines | A pipeline is a logical mapping of a git branch and an environment. It helps you deploy your code via CD or manually | [Pipelines](./../docs/Pipelines/overview) |
 |16. | PostgreSQL | The free and open-source Relational Database Management System(RDBMS). | [PostgreSQL](./../docs/Datasources/Postgres) |
-|17. | Projects | Project is a logical mapping of a cluster and a code repository. A project encompasses multiple pipelines. | [Projects](./../docs/projects/overview) |
-|18. | Redis | Open source, in-memory, key-value data store. | [Redis](./../docs/Datasources/Redis) |
+|17. | Redis | Open source, in-memory, key-value data store. | [Redis](./../docs/Datasources/Redis) |
 
 ### Troubleshooting
 Need help? [Contact](./../docs/Contact-us/reach-out-to-us) us

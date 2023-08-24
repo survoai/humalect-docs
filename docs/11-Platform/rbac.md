@@ -31,7 +31,6 @@ In order to add a new role, you need to:-
 | ---            | --- |
 | Clusters | `view`, `create`, `delete`|
 | Integrations | `view`, `create`, `delete`|
-| Projects | `view`, `create`, `delete`|
 | Pipelines | `view`, `create`, `delete`, `update`|
 | Deployments | `view`, `create`, `showMetricsAndLogs`|
 | Environments | `view`, `create`|
@@ -49,11 +48,10 @@ Resources on the Humalect platform follow a certain hierarchy as mentioned below
 
 1. Integrations are at the top. This is your AWS or Github connection for example.
 2. Clusters are dependent on your cloud account.
-3. Projects are built inside clusters.
-4. Pipelines are part of projects.
-5. Deployments are instances of pipeline runs
+3. Pipelines are built inside clusters.
+4. Deployments are instances of pipeline runs
 
-So overall the hierarchy looks like **integrations**->**clusters**->**projects**->**pipelines**->**deployments**.
+So overall the hierarchy looks like **integrations**->**clusters**->**pipelines**->**deployments**.
 
 While assigning any permission for a resource, read permission for all upstream resources also needs to be provided.
 :::
@@ -97,11 +95,10 @@ Resources on the Humalect platform follow a certain hierarchy as mentioned below
 
 1. Integrations are at the top. This is your AWS or Github connection for example.
 2. Clusters are dependent on your cloud account.
-3. Projects are built inside clusters.
-4. Pipelines are part of projects.
-5. Deployments are instances of pipeline runs.
+3. Pipelines are built inside clusters.
+4. Deployments are instances of pipeline runs.
 
-So overall the hierarchy looks like **integrations**->**clusters**->**projects**->**pipelines**->**deployments**.
+So overall the hierarchy looks like **integrations**->**clusters**->**pipelines**->**deployments**.
 
 While assigning any permission for a resource, read permission for all upstream resources also needs to be provided.
 :::

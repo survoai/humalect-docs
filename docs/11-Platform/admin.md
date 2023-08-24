@@ -80,7 +80,7 @@ You can enter Coupon Code to Redeem Credits. Every coupon comes with a Expiratio
 
 ## 6. Manage User Invites
 
-If you wish to invite a new member to access the cluster and project and view pipelines, click on the `+ Invite User` button located at the right top. 
+If you wish to invite a new member to access the cluster and view pipelines, click on the `+ Invite User` button located at the right top. 
 
 Once you click on the `+ Invite User` button, enter the email address of the person you wish to invite and click `Submit`. 
 
