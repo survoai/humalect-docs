@@ -8,7 +8,7 @@ Following are the steps to host your infrastructure and deploy your applications
 
 ## Signup with humalect
 
-visit https://humalect.com and sign up. Complete the registration flow and log in
+Visit https://humalect.com and sign up. Complete the registration flow and log in.  
 
 ---
 ## Integrate your Cloud Provider
@@ -48,12 +48,14 @@ Visit the links below for instructions on how to create your databases.
 2. [Creating MongoDB with Humalect](./../docs/Datasources/MongoDB)
 3. [Creating PostgreSQL with Humalect](./../docs/Datasources/Postgres)
 ---
-## Create Projects
+<!-- ## Create Projects
 We need a logical mapping between source code repositories and cluster on which they will be deployed. We call it Projects in the Humalect universe.
-To learn more about how to create the Projects, please visit [projects](./../docs/projects/overview)
+To learn more about how to create the Projects, please visit [projects](./../docs/projects/overview) -->
 
----
+
 ## Create Pipelines
+We need a logical mapping between source code repositories and cluster on which they will be deployed. We call it Pipeline in the Humalect universe.
+
 Pipelines act as a source of truth for all your deployments as they encompass every detail related to them like YAMLs, Dockerfile, port number, sub-domain etc.
 
 To learn more about how to create the Pipelines, please visit [pipelines](./../docs/Pipelines/overview)

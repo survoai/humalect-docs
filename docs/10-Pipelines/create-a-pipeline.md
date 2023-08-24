@@ -2,98 +2,172 @@
 sidebar_position: 2
 ---
 
-# Creating a new pipeline
+# Pipeline Creation Process
 
-## Prerequisites for creating a pipeline
-1. A cluster and a project should exist.
-2. To fetch your repositories, there should be a source code integration.
+## Requirements for Establishing a Pipeline on the Humalect Platform
+
+To set up a pipeline on the Humalect Platform, the following prerequisites must be met:
+
+1. **Existence and Proper Configuration of AWS/Azure Cluster:**
+   An AWS or Azure cluster must be in place and appropriately configured. Additionally, the cluster should possess a verified domain to ensure proper functioning.
+
+2. **Availability of Source Code Integration:**
+   A source code integration from platforms such as GitHub, GitLab, or Bitbucket is essential. This integration facilitates the retrieval of your repositories, enabling seamless pipeline implementation.
 
 ## Create Pipeline
 
-To create a pipeline for a project, Go to Humalect console's `dashboard` -> Click on `Projects` -> Click on `Pipelines` button next to your choice of project -> Click on `Create New Pipeline` button on top right on the pipelines page.
+To create a new pipeline, select `Pipeline` from the sidebar and Click on `+ Create New Pipelines` button at top right corner. 
 
-![create-pipeline](./../../static/img/create-pipeline.png)
+![create-pipeline](./../../static/img/create_pipeline.png)
 
-At the top, you will see `Project`, `Cluster` and `Repository` being used in the current pipeline.
 
-To create the pipeline, follow the steps below:-
-1. Assign a `sub-domain` to your pipeline. This sub-domain will be used to host all deployments for this pipeline.
-2. Select a `domain` for your pipeline. This list of domains can be edited on the cluster information page for your cluster.
-3. Enter the `Port Number` on which your code runs.
-4. Select the `branch` that you want to deploy in this pipeline
-5. Select the `environment` which you want to use for all the deployments of this pipeline
-6. Choose whether you want `CD enabled` or not. CD stands for Continuous Deployment, all your commits to this branch will be auto-deployed if this is checked.
-7. (optional) If you want to use a `datasource` created in previous steps in your pipeline, select it from the `Select Datasource` drop down. 
-![connect-datasource](./../../static/img/connect-datasource.png)
+**Procedure for Pipeline Creation:**
 
-If you wish to connect any datasource to the pipeline, you can select it and add it's respective connection string in the environment variables in the next step.
-We currently support three datasources namely: Redis, MongoDB and PostgreSQL.
-To know more about datasources, visit [Datasource](./../Datasources/Overview).
+To establish the pipeline, adhere to the ensuing steps:
 
-8. Next, enter the `environment variables` for your pipeline. You can either add it one by one or use `Env Format` tab and paste your .env file directly. These environment variables will be securely stored in vault/secret-manager in your cloud account. Humalect doesn't access your secrets.
+### Source Tab
+1. **Repository Selection:**
+   Opt for the repository housing your source code. The dropdown list will exhibit repositories from all affiliated source code providers for which you've granted Humalect access permissions.
 
-![add-environment-variables](./../../static/img/add-environment-variables.png)
+2. **Branch Selection:**
+   Subsequently, designate a branch for the newly connected repository. Options encompass common branches like `main`, `dev`, `prod`, or the option to select a custom branch.
 
-There is also a provision to fetch existing environment variables from previously created projects and pipelines by clicking on the `Fetch Existing Env Variable` button.
-![fetch-button](./../../static/img/fetch-button.png)
-![fetch-env-variables](./../../static/img/fetch-env-variables.png)
+### Configuration Tab
+1. **Cluster Selection:**
+   Choose a `Cluster` for hosting your project.
 
-9. Now you can move on to the `advanced settings` which give you the access to edit `Dockerfile` and `YAML` files.
+2. **Environment Selection:**
+   Indicate an `Environment` for all pipeline deployments. If no prior environments exist, an option to select the 'default' environment will be presented.
 
-<b>Dockerfile</b>
+3. **Sub-domain Assignment:**
+   Allocate a `Sub-domain` to the pipeline. This sub-domain will serve as the host for all deployments within this pipeline.
 
-We have got you covered in case you are unfamiliar with Docker by providing you with a pre-defined Dockerfile for your source code. You can tweak and edit the Dockerfile as per your requirement on the UI and it will be saved for subsequent runs.
-![dockerfile](./../../static/img/dockerfile.png)
-You can also use Dockerfile directly from your source code repository by clicking on the button `Use Docker from code source`.
+4. **Domain Choice:**
+   Opt for a `Domain` for the pipeline. You can edit the list of domains through the cluster information page linked to your cluster.
 
-<b>YAML</b>
+5. **Port Number Input:**
+   Input the `Port Number` on which your code operates.
 
-The platform auto-generates `Deployment YAML`, `Service YAML` and `Ingress YAML`. You can customize them as per your need or use the recommended ones.
+6. **Code Language Selection:**
+   From the repository's dropdown list, elect the `Code Language`. Available choices encompass languages like `node`, `python`, `php`, `nginx`, `reactjs`, `nextjs`, `ruby on rails`, `django`, and the option to choose `custom` if none of the available options align.
+
+7. **Continuous Deployment (CD) Preference:**
+   Decide on enabling `Continuous Deployment (CD)` or not. By opting for CD, every commit to this branch will automatically trigger deployments.
+
+These precise steps guide the creation of the pipeline in a structured manner.
+   
+<!-- 9.  (optional) If you want to use a `datasource` created in previous steps in your pipeline, select it from the `Select Datasource` drop down.  -->
+
+Next, click on `Environment Variables` button to move to next screen to setup Secrets for your pipeline. 
+
+### Under Application Runtime Secrets Tab
+These secrets will be used as environment variables during application runtime. You can select multiple secrets too. 
+
+![create-pipeline](./../../static/img/create_pipeline.png)
+
+#### Adding Secrets to the Pipeline
+Now, let's explore the Environment Variables section. Here, you'll be presented with three options:
+- Option 1: Select an already-made secret from the drop-down list.
+- Option 2: Create a new secret file to store sensitive information securely.
+- Option 3: Import an existing secret from your cloud account.
+
+To create a new secret file. Click on the `Create New Secret` button and fill in the required fields.
+- Provide a unique name for the secret
+- Choose the Vault Provider option, such as AWS for AWS Secrets Manager or Azure for Azure Key Vault.
+- Next, select the type of secret. The two options available are `Runtime Environment Variables` and `File to be Mounted Inside the Container`.
+
+
+**Files to be Mounted Inside the Container:** With this option, AWS Secrets Manager stores the secret data securely and allows you to reference it using a specific file path. When you run your container, you can configure the container to mount the secret file from AWS Secrets Manager to a specific location inside the container.
+
+:::caution
+Humalect doesn't access your secrets.
+:::
+
+![create-secret](./../../static/img/secrets_2.png)
+
+**Importing an Existing Secret**
+
+If you possess a secret within your cloud account, you can proceed by selecting the "Import Existing Secret" button. Fill in the subsequent details:
+- Secret Name
+- Vault Provider
+- Type of Secret
+
+![create-secret](./../../static/img/secrets_import.png)
+
+Upon completing the steps for either creating a new secret, choosing an existing one, or importing a secret, proceed by selecting the "Continue to Docker" button located at the lower right-hand corner of the screen. This action will allow you to make modifications to the "Dockerfile" and "YAML" files.
+
+### Docker Configuration Tab
+
+For those unfamiliar with Docker, an established Dockerfile is provided for your source code. This Dockerfile can be adjusted and edited through the user interface, and any changes made will be saved for future use.
+
+![dockerfile](./../../static/img/dockerfile_pipeline.png)
+
+Alternatively, you can directly utilize a Dockerfile from your source code repository by selecting the "Use Docker from code source" checkbox.
+
+To proceed to YAML configuration, select the "YAML" button located at the bottom right corner.
+
+### YAML Configuration Tab
+
+The platform generates "Deployment YAML," "Service YAML," and "Ingress YAML" automatically. These YAML configurations can be customized to match your requirements, or you can choose to use the recommended configurations.
 
 ![YAML](./../../static/img/YAML.png)
 
-You can also fetch YAML files from your source code repository or from any existing pipeline.
+Fetching YAML files from your source code repository or an existing pipeline is also an option.
 
-Please ensure that you use the below mentioned `variable names` if you are editing YAMLs or bringing your own.
+![YAML](./../../static/img/fetch_yaml.png)
+
+Please adhere to the specified `variable names` when editing YAML files or incorporating your own configurations.
+
 ![variables-format](./../../static/img/variables-format.png)
 
-10. You can click on the checkbox `Deploy pipeline on creation` and it will automatically deploy your pipeline as soon as it is created.
+### Finalizing Deployment
 
-After you have entered all the required necessities mentioned above, click on the `Create Pipeline` button at the bottom right.
+By selecting the "Deploy pipeline on creation" checkbox, you can initiate automatic deployment immediately upon creation.
 
+Once you've provided all the necessary details as mentioned above, click on the "Create Pipeline" button located at the bottom right.
 
-## Verify the subdomain
+![pipeline-deployed](./../../static/img/pipeline_deployed.png)
 
-After the pipelines has been successfully created, you need to verify the domain and link the domain with load balancer URL/IP in DNS provider settings. Refer the images below.
+The Deployments page will reflect a successful deployment.
 
-![pipelines-domain](./../../static/img/pipelines-domain.png)
+## Verifying the Subdomain
 
-Refresh the status of Subdomain by clicking the ♺ button. If you see a green tickmark ✅, voila!, it's verified, else if its a ❌, follow the below mentioned steps.
+After successfully creating the pipelines, the domain must be verified and linked to the load balancer URL/IP in the DNS provider settings. Refer to the provided images.
+
+![pipelines-domain](./../../static/img/pipelines-domains.png)
+
+To confirm the status of the subdomain, click the ♺ button to refresh. A green tickmark ✅ indicates successful verification, while a ❌ indicates otherwise. Follow the steps outlined below in case of an unsuccessful verification.
 
 :::note
-All the subdomains which are freshly created will be unverified ❌ by default.
+Newly created subdomains are unverified ❌ by default.
 :::
 
-![pipelines-domain-connect](./../../static/img/pipelines-domain-connect.png)
+![pipelines-domain-connect](./../../static/img/connect_domain.webp)
 
-Add the following record values in the DNS of your domain provider  for the following 2 fields:
-1. Domain Name and, 
+Add the specified record values to your domain provider's DNS for the following fields:
+1. Domain Name
 2. Domain Value.
 
-```
-Domain Name: py-mongo.march.humalect.dev OR *.march.humalect.dev
 
-Domain Value: 20.204.200.195
-```
+ ```
+ Please add the following A record to your DNS provider 
+ (AWS Route53/GoDaddy/Namecheapetc.) portal.
+ 
+ Depending on your DNS provider, you might have to remove your root domain 
+ from the Name field below before entering it in your DNS provider portal
+ 
+ Name: node1.demojuly.humalect.dev OR *.demojuly.humalect.dev
+ Value: 20.204.185.55
+ ```
 
-Return back to Humalect and press the ♺ button to confirm if the subdomain is properly working or not.
+Return back to the platform and press the ♺ button to confirm if the subdomain is properly working or not.
 
 
 :::info
 You can also get the DNS URL from the cluster details page and a list of connected domains.
 :::
 
-![pipelines-cluster-deets](./../../static/img/pipelines-cluster-deets.png)
+![pipelines-cluster-deets](./../../static/img/domain_cluster_details.png)
 
 That's all for now. If you still get into trouble adding or verifying the domains, get in touch with us. 
 

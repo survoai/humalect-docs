@@ -2,37 +2,60 @@
 sidebar_position: 5
 ---
 
-# Pipeline Deletion
+# Pipeline Deletion Process
 
-## Prerequisites for Deleting a Pipeline
-1. There should be a `running cluster`.
-2. A project should be running as a pipeline is a part of it.
-3. A pipeline should exist.
+### Prerequisites for Updating a Pipeline
 
-## Consequences of Deleting a Pipeline
+Before proceeding with the process of updating a pipeline using the Humalect Console, ensure that you satisfy the following prerequisites:
 
-1. `Sub-domain` on which the pipeline is deployed won't be functional anymore.
-2. All the associated Kubernetes objects like `ingress`, `deployments`, `secrets` and `services` of the pipeline will also be deleted.
+1. **Availability of a Running Cluster:**
+   You must have a functional and active cluster established within the Humalect system.
 
-## Recommendation before Deleting a Pipeline
-It is recommended to have a backup of your `YAML`, `docker file` and `secrets` before deleting a pipeline.
+2. **Existing Pipeline Creation:**
+   The pipeline you intend to update should have been previously created and exist within the Humalect environment.
 
-## Deleting the Pipeline
-1. Go to Humalect Console's `dashboard`.
-2. Click on `Projects`.
-3. Click on the `Pipelines` button.
-![list-all-projects](./../../static/img/list-all-projects.png)
-4. Click on the `highlighted three dots` towards the right of the respective row.
-![list-all-pipelines](./../../static/img/list-all-pipelines.png)
-5. You will see `delete` button, click on this button.
+### Implications of Deleting a Pipeline
 
-![delete-dropdown](./../../static/img/delete-dropdown.png)
+When you delete a pipeline within the Humalect platform, the following consequences will occur:
 
-6. Click on the ✅ icon to delete the pipeline.
+1. **Sub-domain Deactivation:**
+   The sub-domain associated with the deployed pipeline will cease to function.
 
-![confirm-deletion-pipeline](./../../static/img/confirm-deletion-pipeline.png)
+2. **Deletion of Associated Kubernetes Objects:**
+   All Kubernetes objects linked to the pipeline, such as `ingress`, `deployments`, `secrets`, and `services`, will be permanently deleted.
 
-Your pipeline will be deleted.
+### Precautions before Deleting a Pipeline
+
+Before initiating the deletion of a pipeline, it is advisable to create backups of the following components:
+
+- `YAML` Configuration Files
+- `Dockerfile`
+- Secrets
+
+### Steps to Delete a Pipeline
+
+1. **Access the Humalect Console Dashboard:**
+   Log in to the Humalect Console and navigate to the dashboard.
+
+2. **Select Pipelines:**
+   From the right-side menu, choose the "Pipelines" option.
+
+3. **Identify the Pipeline:**
+   Locate the specific project pipeline you wish to delete. Click on the highlighted three dots located to the right of the corresponding row.
+
+4. **Initiate Deletion:**
+   From the menu that appears, select the "Delete" option to initiate the pipeline deletion process.
+
+5. **Confirm Deletion:**
+   Click on the ✅ icon to provide final confirmation for the pipeline deletion.
+    
+    ![edit-pipeline](./../../static/img/edit_pipeline.png)
+
+   Your selected pipeline will be permanently deleted.
+
+:::info
+In case you do not have the option to delete visible, it indicates that your role-based access control (RBAC) permissions are insufficient to perform the deletion. Contact your organization's administrator to grant you the necessary permissions.
+:::
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
