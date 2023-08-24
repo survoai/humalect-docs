@@ -6,9 +6,11 @@ Humalect provides several databases that you can integrate and bring your data t
 
 Redis is an *in-memory data* structure store. It can be used as a database, cache, and message broker. It supports multiple data structures such as *strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, and geospatial indexes* with radius queries.
 
-> For more information, see [Redis Docs.](https://redis.io/docs/about/)
+:::info
+For more information, see [Redis Docs.](https://redis.io/docs/about/)
+:::
 
-> ## Prerequisites
+## Prerequisites
 1. Have a connected cloud provider
 2. Have a connected source code provider
 3. Have a cluster
@@ -27,7 +29,8 @@ Let's create a Datasource with `Redis v7.0.4`.
 > | **Name** | name of your Datasource|
 > | **Select Cluster** | cluster name where you want your Datasource to be created |
 > | **Select DataSource** | choose database/cache of your choice|
-> | **Select Version** | `7.0.1`, `6.2.7` ([click for more details on redis versions](https://redis.io/download/))|
+> | **Select Version** | `7.0.4`, `6.2.7` ([click for more details on redis versions](https://redis.io/download/))|
+> | **Select Color Label**| choose b/w RED, GREEN, BLUE| 
 
 
 **Step 3:** After you enter the above details, you'll be prompted to enter additional details such as `persistence size`, `service port`, etc. Refer to the below table for more information.
@@ -44,8 +47,9 @@ Let's create a Datasource with `Redis v7.0.4`.
 
 `*default value`
 
-> **Note:** Redis uses asynchronous replication, with asynchronous replica-to-master acknowledges of the amount of data processed. **Master-slave replication** enables data from one database server (the master) to be replicated to one or more other database servers (the slaves). The master logs the updates, which then ripple through to the slaves.
-
+:::info
+Redis uses asynchronous replication, with asynchronous replica-to-master acknowledges of the amount of data processed. **Master-slave replication** enables data from one database server (the master) to be replicated to one or more other database servers (the slaves). The master logs the updates, which then ripple through to the slaves.
+:::
 
 **Step:4** After you successfully fill in all the required details, click on `Create` and the Datasource creation process will start.
 
@@ -55,21 +59,23 @@ Let's create a Datasource with `Redis v7.0.4`.
 
 
 **Step 5:** Once the Redis Datasource is successfully created, you'll see them listed in the DataSources tab with details like:
-		a. Datasource Name
-		b. Cluster Name
-		c. Database used
-		d. Database version used
+
+- Release Name - User entered name
+- Related Cluster Name - The name of cluster which hosts the datasource
+- Datasource name - [Redis | MongoDB | PostgreSQL | MySQL ]
+- Database version used
+- Color Label
+- Status - Datasource creation Completed or Failed. 
+- Action - To fetch Datasource credentials
+  
 
 **Step 6:** If you wish to **delete** the datasource, click on the vertical 3 dots next to the datasource card and click on `Delete`. This will initiate the deletion process.
 
-> **Caution:** Do not delete any datasource if you are not sure about it as it can lead to dataloss.
+:::caution
+Do not delete any datasource if you are not sure about it as it can lead to dataloss.
+:::
 
-
-
-
-![redis-2](./../../static/img/redis-2.png)
-
-<center><i>Picture representing the state of UI when the Datasource has been created.</i></center>
+![ds_delete](./../../static/img/datasources/ds_delete.png)
 
 
 

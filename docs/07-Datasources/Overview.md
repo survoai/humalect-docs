@@ -4,6 +4,8 @@ title: Datasources Overview
 description: Databases and caches supported by the Humalect platform
 ---
 
+import DocCardList from '@theme/DocCardList';
+
 ## What do we mean by data sources?
 
 Every application needs some kind of database or cache to store data. There are multiple ways to use databases:
@@ -21,7 +23,13 @@ Ephermal databases on demand made easy.
 > | -------- | ------------------------ | -- |
 > | MongoDB | `v6.0.1`, `v5.0.10` | [LINK](https://www.mongodb.com/evolved) |
 > | Redis | `v7.0.4`, `v6.2.7` |[LINK](https://redis.io/download/#:~:text=Stable%20(6.2.6)) |
-> | Postgres | `v14.11.0`, `v11.14.0` |[LINK](https://www.postgresql.org/support/versioning/) |
+> | Postgres | `v14.5.0`, `v11.14.0` |[LINK](https://www.postgresql.org/support/versioning/) |
+> | MySQL   | `v8.0.33`, `v8.0.29` | [LINK](https://dev.mysql.com/doc/relnotes/mysql/8.0/en/) |
+
+
+
+
+<DocCardList />
 
 ## Steps to create a Datasource in Humalect
 
@@ -36,15 +44,29 @@ Follow these steps to create a new datastore:
 <center><i>Picture representing the state of UI while creating Datasources.</i></center>
 
 
-**Step 1:** Enter Datasource Name
+**Step 1:** Enter Datasource Name.
 
-**Step 2:** Select your Cluster in which you want to host your datasource
+**Step 2:** Select your Cluster in which you want to host your datasource.
 
-**Step 3:** Select datasource of your choice from the list
+**Step 3:** Select datasource of your choice from the list.
 
 **Step 4:** Select the Datasource version. You can also edit advanced options like username and replica count.
 
 **Step 5:** Hit create button and Voila it's done.
+
+
+![ds_view](./../../static/img/datasources/ds_view.png)
+
+
+### How to fetch Datasource Credentials? 
+In order to fetch the datasource credentials, click on the eye button under `Actions` section for the respective datasource. Here, you'll be presented with informations like:
+
+- Host IP - e.g: 10.0.53.83
+- Port - e.g: 2635
+- Password - e.g:nsky78reww3E
+- Connection String - e.g: postgres://postgres:BdFee8XeAN@10.0.53.83:5432/db_name
+
+![ds_creds](./../../static/img/datasources/ds_creds.png)
 
 ## Can these datasources be used in production?
 
@@ -55,8 +77,9 @@ These datasources are meant to be used in an ephermal way and are best suited fo
 All the data is safe as we use PVs and PVCs to store your data. All the data is stored in fault tolerant block storage with your cloud provider.
 
 
-> **Tip:**
-> *Did not find your favorite database in the list? Reach out to us to raise a request for new datasources.*
+:::info
+Did not find your favorite database in the list? Reach out to us to raise a request for new datasources.
+:::
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
