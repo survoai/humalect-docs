@@ -6,20 +6,21 @@ Humalect provides several databases that you can integrate and bring your data t
 
 Postgres is a free and open-source *relational database* management system that is used for managing large amounts of structured data. It offers robust support for SQL, as well as several advanced features, including multi-version concurrency control, point-in-time recovery, and native replication.
 
+:::info
+For more information, see [Postgres Docs.](https://www.postgresql.org/docs/)
+:::
 
-> For more information, see [Postgres Docs.](https://www.postgresql.org/docs/)
-
-> ## Prerequisites
+## Prerequisites
 1. Have a connected cloud provider
 2. Have a connected source code provider
 3. Have a cluster
 
 ## Create a Postgres Datasource
 
-Let's create a Datasource with `Postgres version 14.11.0`
-
+Let's create a Datasource with `Postgres version 14.5.0`
 
 **Step 1:** Go to the DataSources Tab from the UI ([or click here to get redirected](https://console.humalect.com/user/datasources)) and click on `+ Create New Datasource.`
+
 **Step 2:** Enter the following details:
 
 > | Field | Desc |
@@ -27,7 +28,8 @@ Let's create a Datasource with `Postgres version 14.11.0`
 > | **Name** | name of your Datasource|
 > | **Select Cluster** | cluster name where you want your Datasource to be created |
 > | **Select DataSource** | choose database/cache of your choice|
-> | **Select Version** | `v14.11.0`, `v11.14.0` ([click for more details on Postgres versions](https://www.postgresql.org/docs/release/))|
+> | **Select Version** | `v14.5.0`, `v11.14.0` ([click for more details on Postgres versions](https://www.postgresql.org/docs/release/))|
+> | **Select Color Label**| choose b/w RED, GREEN, BLUE| 
 
 
 **Step 3:** After you enter the above details, you'll be prompted to enter additional details such as `persistence size`, `port number`, etc. Refer to the below table for more information.
@@ -64,17 +66,23 @@ Under the `Advanced Options`, enter the following details:
 
 **Step 5:** Once the Postgres Datasource is successfully created, you'll see them listed in the DataSources tab with details like:
 
- a. Datasource Name
- b. Cluster Name
- c. Database used
- d. Database version used
+- Release Name - User entered name
+- Related Cluster Name - The name of cluster which hosts the datasource
+- Datasource name - [Redis | MongoDB | PostgreSQL | MySQL ]
+- Database version used
+- Color Label
+- Status - Datasource creation Completed or Failed. 
+- Action - To fetch Datasource credentials
+
+
 
 **Step 6:** If you wish to **delete** the datasource, click on the vertical 3 dots next to the datasource card and click on `Delete`. This will initiate the deletion process.
 
-> **Caution:** Do not delete any datasource if you are not sure about it as it can lead to dataloss.
+:::caution
+Do not delete any datasource if you are not sure about it as it can lead to dataloss.
+:::
 
-
-![datasource_mongo-2](./../../static/img/datasource_mongo-2.png)
+![ds_delete](./../../static/img/datasources/ds_delete.png)
 
 
 ## How to use existing datasources in a pipeline?
