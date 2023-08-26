@@ -50,7 +50,7 @@ Visit the links below for instructions on how to create your databases.
 ---
 ## Create Projects
 We need a logical mapping between source code repositories and cluster on which they will be deployed. We call it Projects in the Humalect universe.
-To learn more about how to create the Projects, please visit [projects](./../docs/projects/overview)
+<!-- To learn more about how to create the Projects, please visit [projects](./../docs/projects/overview) -->
 
 ---
 ## Create Pipelines

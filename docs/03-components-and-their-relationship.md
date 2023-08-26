@@ -26,7 +26,7 @@ A project is a logical entity in which the user maps two options:
 1. The cluster on which the application is to be deployed
 2. The code repository that is to be deployed
 
-To know more about projects, visit [Project](./../docs/projects/overview).
+<!-- To know more about projects, visit [Project](./../docs/projects/overview). -->
 
 <b>Note:-</b> Project is not a physical/infra entity, it is just a logical entity to map the cluster and code repo for application deployments.
 
