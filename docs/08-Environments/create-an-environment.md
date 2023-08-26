@@ -15,7 +15,7 @@ After following step 1, you will see this screen:
 3. Select a `cluster` from the drop-down menu. This cluster will be used to host your environment. 
 4. Write the name of the Kubernetes `namespace` inside which you would like to host your environment. if the namespace does not exist already, it will be automatically created for you.
 
-After you have entered all the required necessities mentioned above, click on highlighted `Create Environment` button at the bottom and your environment will be created. Now you can host create multiple pipelines inside this environment post creating projects.
+After you have entered all the required necessities mentioned above, click on highlighted `Create Environment` button at the bottom and your environment will be created. Now you can host create multiple pipelines inside this environment.
 
 ### Troubleshooting
 Need help? [Contact](./../Contact-us/reach-out-to-us) us
